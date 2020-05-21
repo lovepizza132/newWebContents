@@ -11,7 +11,7 @@ pageEncoding="UTF-8"%>
 <title> 1~100까지 중 숫자 맞추기 </title>
 </head>
 <body>
-    
+
 <!-- 1. 이전화면 값 얻어와 guess 변수에 지정 -->
 <c:set var="guess" value="${param.guess }"></c:set>
 <!-- 2. 그 값이 없다면 임의의 수를 만들어 세션에 지정 -->
