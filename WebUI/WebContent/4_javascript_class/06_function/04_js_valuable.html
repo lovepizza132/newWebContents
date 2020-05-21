@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>자바스크립트 변수와 범위</title>
+	<script>
+		// 글로벌 변수와 지역변수
+		// - var 선언하지 않으면 글로벌 변수가 된다.
+// 		var scope ='글로벌 변수';
+// 		function getValue(){//함수 안에서 변수 선언을 가장 앞에 사용할 것
+// 			document.write('0>' + scope + '<br/>'); // undefined 최초에 window에서 한번 쓰윽 scan한다 따라서 함수안에 지역변수가 있다는 것은 인지 그러나 다음행에 scope 변수 초기화가 이루어짐으로 값이 undefined가 나온다.
+// 			var scope='지역변수'; //함수안에서만 노는 지역변수웅ㅇ우우우우우우 , var을 선언하지 않으면 함수안에서 글로벌 변수인 scope를 선언하는 경우이기 때문에 이후에 나오는 scope의 값은 '지역변수'가 된다
+// 			return scope;
+// 		}
+// 		document.write('1>' + getValue() + '<br/>'); //지역
+// 		document.write('2>' + scope ); // 글로벌 
+		
+		// 지역변수: 함수 블럭 안에 변수(if문 안의 변수는 지역변수가 아니다.)
+		
+		if(true){
+			var i = 100; //함수블럭이 아닌 if문 블럭안의 변수 선언은 글로벌 변수다(지역변수 아님)
+		}
+		document.write('i=' + i +'<br/>');
+		
+		for(var j=0; j<3; j++){} // for문 안에서 선언해둔 변수도 글로벌 변수 이지만 덮어쓰기가 가능해서 문제를 일으키지 않음
+		for(var j=0; j<3; j++){}
+		
+// 		var j=1;
+// 		var j=2;
+		let j=1; // 오류뜸: let으로 같은 변수명을 사용하고자 한다면 다음생에 해라
+		let j=2;
+		document.write('j=' + j + '<br/>');
+		
+	</script>
+</head>
+
+<body>
+
+  
+ </body>
+</html>

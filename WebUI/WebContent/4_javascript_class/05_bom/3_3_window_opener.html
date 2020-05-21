@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form name='frm1'>
+	<select name='select'>
+		<option>도시선택</option>
+		<option>서울시</option>
+		<option>부산시</option>
+	</select><br>
+	<input type='text', name='textField', id='textField' width='100'>
+</form>
+<script type="text/javascript">
+	var selInfo = document.frm1.select;
+	var win = window.open('3_4_window_opener.html', '학원이 가산이라 슬픈동물', 'width=300, height=200');
+	win.moveTo(screen.availWidth/4, screen.availHeight/4);
+	selInfo.onchange = function(){
+		win.frm2.reciveText.value=selInfo.value;
+	}
+</script>
+</body>
+</html>

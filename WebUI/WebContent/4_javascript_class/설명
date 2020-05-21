@@ -1,0 +1,36 @@
+
+*자바스크립트 = ECMAscript + DOM(Document Object Model)
+						+ BOM(Browser Object Model)
+DOM: 단순한 글씨를 메모리에 띄운 애(메모리에 띄어놓은 객체)
+
+	최근 자바스크립트 버전 es5 / es6 (개발시 자바스크립트의 버전을 확인해야한다.)
+	
+*자바스크립트의 변천 (2010)
+									2010이전					2020
+	presentation(화면)				html, css, js			html, css, js
+	application(구현)					asp, jsp, php			node.js(웹서버 기능을 하는 자바스크립트 = 자바스크립트 기반으로 만들어진 웹서버-탐캣을 안깔아도 됨 개이득)
+	database(데이타베이스)				orcle, mysql			mongodb
+	
+	
+	
+	웹의 구조는 html, 스타일은 css, 동작은 javascritpt
+	
+	
+1. 일반적으로 외부스크립트를 내부스크립트보다 먼저 기술한다.
+
+2. 스크립트코드를 주석으로 감싸는 이유는 처리되지 않는 브라우저에서 주석으로 처리하기 위함
+
+3. 변수 선언	var - let(변수)
+				ㄴ const(상수)
+				
+4. 데이터형
+		
+		기본형	- 수치형(number)
+				- 문자열(String)
+				- 논리형(boolean)
+				- 특수형(null/undefined)
+		
+		참조형	- 배열(array)
+				- 객체(Object)
+				- 함수(function)		
+	

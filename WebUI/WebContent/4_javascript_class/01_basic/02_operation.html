@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>자바스크립트의 연산자</title>
+<script type="text/javascript">
+
+//1.  실수형 계산에는 주의 -> 2진수로 변환하여 저장하고 연산하기 때문에 발생
+document.writeln(0.2*10*3 == 0.6*10);//실수형은 정수형으로 만들어주고 진행할 것
+//alert(0.2*3);
+
+//2.==와 === 차이는?
+var num =10;
+var str ='10';
+if(num == str) document.writeln("같다1 <br/>");
+else document.writeln("다르다1 <br/>");
+		
+if(num === str) document.writeln("같다2 <br/>"); // == 는 값만 비교, === 값+자료형 비교
+else document.writeln("다르다2 <br/>");
+
+
+// 3. 기본형과 참조형
+var a = 10;
+var b = 10;
+if(a==b)document.writeln("같다3 <br/>");
+else document.writeln("다르다3 <br/>");
+
+var a = ['java', 'script']; //배열, 객체, 함수는 참조형이다 따라서 a와 b의 주소값을 물어봄 따라서 a와 b는 다름
+var b = ['java', 'script'];
+if(a==b)document.writeln("같다4 <br/>");
+else document.writeln("다르다4 <br/>");
+
+
+// 4. boolean형(true / false)
+//		true:1, false:0
+//		나머지 수는 boolean 취급하지 않음
+alert(true==1); //결과 true -> 1을 true로 취급
+alert(false==0); //결과 true -> 0을 false로 취급
+alert(true==2); //결과 false -> 2를 false로 취급
+alert(false==-1); //결과 true -> -1을 false로 취급
+
+
+
+
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

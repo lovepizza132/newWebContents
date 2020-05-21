@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> Number 형과 형변환 </title>
+<script type="text/javascript">
+
+
+// 1. 숫자 형식 메소드 
+var su = 123.456789;
+document.writeln( su.toExponential(2)  + "<br/>" );	//지수형 언어
+document.writeln( su.toFixed(3)  + "<br/>" ); //소수점 3자리 까지 픽스 4번째에서 반올림
+document.writeln( su.toFixed(7) + "<br/>" ); //소수점 7자리 까지 픽스 8번째에서 반올림
+document.writeln( su.toPrecision(6)  + "<br/>" ); //정수+소수점 합한 6자리까지 픽스 후 7번째에서 반올림
+document.writeln( su.toPrecision(10)  + "<br/>" ); //정수+소수점 합한 10자리까지 픽스 후 11번째에서 반올림	
+
+//-------------------------------------------------
+// 2. 형변환
+var n = '0770'; // n : string
+document.writeln(typeof n + '<br/>');
+document.writeln(Number(n) + '<br/>');
+document.writeln(parseInt(n) + '<br/>');
+document.writeln(parseFloat(n) + '<br/>');
+document.writeln(typeof parseFloat(n) + '<br/>');
+
+var n = '123abc'; // n : string
+document.writeln(typeof n + '<br/>');
+document.writeln(Number(n) + '<br/>'); //NaN : Not a Number
+document.writeln(parseInt(n) + '<br/>');
+document.writeln(parseFloat(n) + '<br/>');
+document.writeln(typeof parseFloat(n) + '<br/>');
+
+//************
+// number + string = string
+// number - string = number
+
+document.writeln(123 + '4'); //1234
+document.writeln('<hr/>');
+document.writeln(123 - '4'); //119
+
+document.writeln(typeof (123 + '4')); // String
+document.writeln('<hr/>');
+document.writeln(typeof (123 - '4')); // number
+</script>
+</head>
+<body>
+
+</body>
+</html>

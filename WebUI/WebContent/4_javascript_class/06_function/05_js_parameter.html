@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title> 파라메터 인자</title>
+	<script>
+		// call by value: 함수의 인자로 기본형이 넘어왔을 때
+		// call by reference : 함수의 인자가 참조형인 경우 (배열, 객체, 함수)
+		
+		var pri =10;
+		function priParam(a){
+			a--;
+			return a;
+		}
+		document.write('기본형인자 1>' + priParam(pri) + '<br/>'); //
+		document.write('기본형인자 2>' + pri + '<br/>'); // call by value(원본은 바꾼적이 없다.)
+		
+		var ref = [1,2,3,4,5];
+		function refParam(ref){
+			ref.pop(); // 스텍구조로 취급(LIFO)
+			/*ref.shift();// 큐 구조로 취급(FIFO)*/
+			return ref;
+		}
+		document.write('참조형인자 1>' + refParam(ref) + '<br/>'); // call by reference: 원본을 수정함 ref는 [1,2,3,4,5]의 주소값 을 지님(참조형) ref.pop을 통해 '5'를 배냄, return ref;를 통해 5가 빠져나간 ref를 출력
+		document.write('참조형인자 2>' + ref + '<br/>'); // call by reference: 참조형이라 원본이 수정 됨.
+	</script>
+</head>
+
+<body>
+
+  
+ </body>
+</html>

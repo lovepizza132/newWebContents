@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+//-------------------------------------------------------------------------
+//  즉시 실행 함수
+//	 - 함수를 변수에 직접 할당하는 것이 아니라 함수의 결과물을 할당하기 위해 즉시 실행 함수를 사용(?)
+//	- 추후에 클로져와 관련
+
+// var f = function(num){
+// 	document.write('num= ' + num + '<br/>');
+// }(10); // 즉시 실행 함수-> f자리에 통으로 함수를 넣음
+// var func = f(10);
+
+
+// 지역변수인 num을 공유할 수 있게 만듬 -> closure의 기본개념
+var byensu = function(num){ // (함수선언실행 동시에)함수가 변수가 되면서 리턴형으로 호출만 하면 바로 실행가능한 이것은 증말 대박이다.
+
+	return function(){
+		--num;
+		document.write('num= ' + num + '<br/>');
+		};
+}(10);
+
+document.write(byensu + '<br/>');
+document.write(typeof byensu + '<br/>'); // string이 아닌 function으로 리턴
+
+byensu();
+byensu();
+byensu();
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

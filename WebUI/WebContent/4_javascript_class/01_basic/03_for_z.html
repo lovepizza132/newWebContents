@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>03_for_z.html</title>
+<script type="text/javascript">
+/*
+ * 원래라면 script를 body안에 넣는게 맞다
+ */
+var cnt = 1;
+document.write('<table border="2">');
+for(var i=0; i<5; i++){
+	document.write('<tr>');
+	for(var j=0; j<5; j++){
+		//document.write('<td>'+((i*5)+(j+1))+'</td>');
+		document.write('<td>'+ cnt++ +'</td>');
+	}	
+	document.write('</tr>');
+}
+document.write('</table>');
+
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

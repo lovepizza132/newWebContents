@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+
+<!-- jQuery라이브러리를 임포트 -->
+<script type="text/javascript"
+	src="http://code.jquery.com/jquery-1.9.0.js"></script>
+
+<!-- jstorage라이브러리를 임포트 -->
+<script type="text/javascript" src="js/jstorage.min.js"></script>
+
+<script type="text/javascript">
+	$(function() {
+		$('#name').val($.jStorage.get('name'));
+		$('#memo').val($.jStorage.get('memo'));
+		
+		$('#set').click(function() {
+			// 화면입력값을 얻어오기
+			var name = $('#name').val(); // form안에서 value값 얻어오는 건 다 val
+			var memo = $('#memo').val();
+			$.jStorage.set('name', name);
+			$.jStorage.set('memo', memo);
+		});
+
+		$('#del').click(function() {
+			$.jStorage.deleteKey('name');
+			$.jStorage.deleteKey('memo');
+		});
+
+	});
+</script>
+</head>
+<body>
+	<form id="sample">
+		이름：<input id="name" /><br /> 
+		비고：<input id="memo" /><br /> <br />
+		<button id="set">등록</button>
+		<button id="del">삭제</button>
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> 이벤트 핸들러 연결 </title>
+<script type="text/javascript">
+
+window.onload = function(){//script를 body보다 먼저 사용한 경우 window.onload를 꼭 사용해야 한다. window가 로딩될 때, 함수를 실행 시키겠다아ㅇㅅㅇ
+	var btn = document.getElementById('btn'); //id가 'btn'인 element를 가져와 변수 btn에 저장한다.
+	btn.onclick = function(){ //'btn'버튼에서 눌러졌을 때 함수를 실행시키겠다.
+		alert('이벤트');
+	}
+} 
+
+
+</script>
+ </head>
+ <body>
+	<input type='button' value='눌러'  id='btn' />
+	
+</body>
+</html>

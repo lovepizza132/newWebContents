@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>자바스크립트 함수 3가지</title>
+	<script>
+	// 1. function 명령
+	/* 매개변수에 자료형 사용하지 않음 */
+	/* 자료형을 기술하지 않으니 리턴하는 자료형도 표기하지 않음 */
+/* 	function triangle(base, height){
+		return base*height/2;
+	}
+	document.write('삼각형 면적=' + triangle(3,4) + '<br/>'); */
+	// 2. 함수리터럴  (함수도 변수의 값이다.) * 리터럴 : 변수의 값		
+	/* var triangle = function (base, height){
+		return base*height/2;
+	}
+	document.write('삼각형 면적=' + triangle(3,4) + '<br/>'); */
+	
+//---------------------------------------------------	
+	// 3. Function 생성자
+	/* var triangle = new 클래스명();// 변수명과 클래스명 이름이 같은 경우 생성자 함수 */
+	/* var triangle = new Function('base', 'height', 'return base*height/2;');// 클래스 객체 생성
+	document.write('삼각형 면적=' + triangle(3,4) + '<br/>'); */
+	// 4. 애로우함수
+	var triangle = (base, height)=>{
+		return base*height/2;
+	}
+	document.write('삼각형 면적=' + triangle(3,4) + '<br/>');
+	
+	</script>
+</head>
+
+<body>
+
+  
+ </body>
+</html>

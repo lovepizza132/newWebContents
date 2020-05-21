@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> 03_argument.html </title>
+<script type="text/javascript">
+
+//@함수의 인자는 갯수를 체크하지 않는다.
+/* function mul(first, second){
+	return first*second;
+}
+document.write('곱은 ' + mul(3,4) + '<br/>');
+document.write('곱은 ' + mul(3,4,5) + '<br/>');//함수의 인자개수, 자료형 checking하지 않음
+document.write('곱은 ' + mul(3) + '<br/>');//함수의 인자개수, 자료형 checking하지 않음 */
+
+/* function mul( args ){
+	return args.first*args.second;
+}
+var obj = {first:3, second:4};
+document.write('곱은 ' + mul(obj) + '<br/>'); //객체를 통으로 넘길 수 있음 */
+
+// 특별 객체: arguments
+function func(){
+	document.write( arguments + '<br/>'); //arguments는 지역변수로 객체사용 + array 속성을 지녔다. (실제 Array와는 다르며 var a = Array.from(arguments)로 array로 변환 가능)
+	console.log( arguments);// 함수내의 모든 인수를 참조할 수 있다. -> 100, 200이 들었다.
+}
+func(100, 200);
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Document 예제 </title>
+<meta charset="UTF-8">
+<style type="text/css">
+ body { 
+		background-color: #ffcc33;
+		color: #2222ff;
+	} 	
+</style>
+
+<script type="text/Javascript">
+	window.onload = function(){
+    	document.getElementById('btn').onclick = function(){
+			// 1. ID로 찾기
+			//var userName = document.getElementById('userName').value; //userName은 input 태그 그 중에 value를 가져오라 하였으니 '홍길동'을 가져옴
+			//var userName = document.querySelector('#userName').value;
+			
+			// 2. 폼의 요소찾기 (name으로 찾기)
+			var userName = document.frm.username.value;
+			
+			
+			
+			
+			
+			result.innerHTML = userName+'님 반갑'; //innerHTML 태그와 태그사이에 위치 시키는 것
+			// 개발자 모드 source는 디버깅, element는 구조만 보겠다.
+			
+			document.frm.submit();
+ 
+    	}
+    }
+</script>
+</head>
+
+<body>
+	<!-- 폼태그 안에 있는 입력값은 서버로 전송할 수 있다  -->
+	<form name="frm" action='xxxxx.jsp'> <!-- 전송받을 서버 이름은 action='xxxx.jsp'로 작성한다. -->
+		당신의 이름은? <input type="text" id='userName' name='username' size="20">
+		<input type="submit" value="확인" id='btn'>
+   	</form>
+	<div id='result'></div>
+</body>
+</html>
+
+<!--  이벤트바인딩방식을 이벤트 핸들러 방식으로 변경 -->

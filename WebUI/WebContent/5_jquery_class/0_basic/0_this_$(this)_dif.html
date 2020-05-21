@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src='../lib/jquery-3.5.1.min.js'></script>
+<script type="text/javascript">
+// 1.  this와 $(this) 차이
+// javascript - this : 이벤트가 발생한 태그의 요소 [object HTMLDivElement]
+// Jquery - $(this) : 이벤트가 발생한 오브젝트 [object Object]
+// this = $(this)[0]
+$(document).ready(function(){
+    $("#div1").click(function(){
+$('#test1').text(this);
+$('#test2').text($(this));
+    });
+});
+
+
+
+</script>
+</head>
+<body>
+<div id="div1" style="height:100px;width:300px;border:1px solid black;background-color:yellow;"></div>
+<div id='test1'></div>
+<div id='test2'></div>	
+</body>
+</html>

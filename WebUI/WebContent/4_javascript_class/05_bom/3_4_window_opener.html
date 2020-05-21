@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form name='frm2'>
+		<input type='text' name='reciveText' width='100'><br>
+		<input type='radio' name='city' value='가산'>가산<br>
+		<input type='radio' name='city' value='판교'>판교<br>
+		<input type='radio' name='city' value='부평'>부평<br>
+	</form>
+<script type="text/javascript">
+	var selRadio = document.frm2.city;
+	for(var i=0; i<selRadio.length; i++){
+		selRadio[i].onclick = function(){
+			opener.frm1.textField.value=this.value;
+		}		
+	}
+</script>
+</body>
+</html>
