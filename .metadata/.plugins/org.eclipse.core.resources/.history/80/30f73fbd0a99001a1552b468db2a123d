@@ -1,0 +1,195 @@
+package mybatis.guest.service2;
+
+import java.text.DecimalFormat;
+import java.util.*;
+
+
+import mybatis.guest.model2.*;
+import mybatis.guest.session2.*;
+
+public class BoardService {
+	 
+	private int totalRecCount;		// 전체 레코드 수	
+	private int pageTotalCount;		// 전체 페이지 수
+	private int countPerPage = 5;	// 한페이지당 레코드 수
+	
+	private static BoardService service;
+	 
+	public static BoardService getInstance(){
+		if( service == null) service = new BoardService();
+		return service;
+	}
+	private BoardService() {} //이걸 안하면 디폴트값으로 public CommentService(){}생성자 생성 그러면 new로 계속 만들어져서 꼭 해야함
+	
+	BoardRepository repo = new BoardRepository();
+	
+	// 목록보기
+	public List<BoardRec> getArticleList(String pNum){
+		int pageNum=1;
+		if(pNum != null) pageNum = Integer.parseInt(pNum);
+		/*
+		 *	pageNum		firstRow	endRow
+		 *		1			1			5
+		 *		2			6			10
+		 *		3			11			15
+		 *
+		 */
+		int firstRow = (pageNum-1)*countPerPage+1;
+		int endRow = pageNum*countPerPage;
+		
+		List<BoardRec> mList = repo.selectList(firstRow, endRow);			
+		return mList;
+	}
+	// total 페이지
+	public Integer getTotalCount() {
+		int totalRecCount =  repo.getTotalCount();
+		pageTotalCount = (int)Math.ceil((double)totalRecCount/countPerPage);
+		return pageTotalCount;
+	}
+	// 입력하기
+	
+	
+	// view보기
+	public BoardRec getArticleById(String id) throws BoardException{
+		int articleId = 0;
+		if(id != null) articleId = Integer.parseInt(id);
+		BoardRec board = repo.getArticleById(articleId);
+		try {
+			repo.increaseReadCount(articleId);// view화면 open시 마다 조회수 증가
+		} catch (mybatis.guest.session2.BoardException e) {
+			System.out.println("조회수 함수 오류");
+			e.printStackTrace();
+		} 
+		return board;
+	}
+	// 삭제하기
+	public int delete( String id, String password ) throws BoardException{
+		
+		// DB delete
+		int article_id = 0;
+		if( id!=null ) article_id = Integer.parseInt( id );
+		int result = repo.deleteBoard(article_id, password);
+		return result;
+	}
+	// 입력하기
+	public Integer write(BoardRec board) {
+		// 그룹번호(group_id) 지정
+		int groupId = repo.getGroupId();
+		board.setGroupId(groupId);
+		
+		// 순서번호(sequence_no) 지정
+		DecimalFormat dformat = new DecimalFormat("0000000000");
+		board.setSequenceNo( dformat.format(groupId) + "999999");
+		// groupId : 1 - sequencceNo: 0001999999
+		
+		// DB에 insert
+		int article_id = repo.insert(board);
+		
+		return article_id;
+	}
+	
+	// 수정하기
+	public Integer update(BoardRec board) {
+		int result = repo.modifyBoard(board);
+		return result;
+	}
+	
+	// 답글 달기
+	public BoardRec reply(String pId, BoardRec rec) {
+		int parentId = 0;
+		if( pId != null ) parentId = Integer.parseInt(pId);
+		
+		// 부모게시글의 레코드를 얻어옴
+		BoardRec parent = repo.getArticleById(parentId);
+		
+		// 부모게시글을 체크
+		checkParent(parent, parentId);
+		
+		// 답변글에 순서번호 구하기
+		String maxSeqNum = parent.getSequenceNo();
+		String minSeqNum = getSearchMinSeqNum( parent );
+		
+		String lastChildSeq = repo.selectLastSequenceNumber( maxSeqNum, minSeqNum );
+		
+		String sequenceNumber = getSequenceNumber( parent,lastChildSeq);
+		
+		rec.setGroupId(parent.getGroupId()); // 부모의 그룹번호와 동일하게 지정
+		rec.setSequenceNo(sequenceNumber);	 // 위에서 구한 답변글의 순서번호 지정
+		rec.setPostingDate( (new Date()).toString());	 // 등록일
+		
+		int articleId = repo.insert(rec);
+		rec.setArticleId(articleId);
+		return rec;
+	}
+	
+	/*
+	 * 부모글이 존재하는지 부모글이 마지막 3단계인지 확인하는 함수
+	 */
+	private void checkParent( BoardRec parent, int pId ) throws BoardException
+	{
+		
+		if( parent == null ) throw new BoardException("부모글이 존재하지 않음 : " + pId );
+		
+		int parentLevel = parent.getLevel();
+		if( parentLevel == 3 ) throw new BoardException("3단계 마지막 레벨 글에는 답변을 달 수 없습니다.");
+	
+	}
+	
+	private String getSearchMinSeqNum( BoardRec parent )
+	{
+		String parentSeqNum = parent.getSequenceNo();
+		DecimalFormat dFormat = new DecimalFormat("0000000000000000");
+		long parentSeqLongValue = Long.parseLong(parentSeqNum);
+		long searchMinLongValue = 0;
+		
+		switch( parent.getLevel())
+		{
+		case 0 : searchMinLongValue = parentSeqLongValue / 1000000L * 1000000L; break;
+		case 1 : searchMinLongValue = parentSeqLongValue / 10000L * 10000L; break;
+		case 2 : searchMinLongValue = parentSeqLongValue / 100L * 100L; break;
+		}
+		return dFormat.format(searchMinLongValue);
+	}
+	
+	
+	private String getSequenceNumber( BoardRec parent, String lastChildSeq ) throws BoardException
+	{
+		long parentSeqLong	= Long.parseLong( parent.getSequenceNo());
+		int  parentLevel	= parent.getLevel();
+		
+		long decUnit = 0;
+		if		( parentLevel == 0 ){	decUnit = 10000L;	}
+		else if	( parentLevel == 1 ){	decUnit = 100L;		}
+		else if ( parentLevel == 2 ){	decUnit = 1L;		}
+		
+		String sequenceNumber = null;
+		
+		DecimalFormat dFormat = new DecimalFormat("0000000000000000");
+		if( lastChildSeq == null ){			// 답변글이 없다면
+			sequenceNumber = dFormat.format(parentSeqLong-decUnit);
+		} else {							// 답변글이 있다면, 마지막 답변글인지 확인
+			String orderOfLastChildSeq = null;
+			if( parentLevel == 0 ){
+				orderOfLastChildSeq = lastChildSeq.substring(10,12);
+				sequenceNumber = lastChildSeq.substring(0, 12) + "9999";
+			}else if( parentLevel == 1 ){
+				orderOfLastChildSeq = lastChildSeq.substring(12,14);
+				sequenceNumber = lastChildSeq.substring(0, 14) + "99";				
+			}else if( parentLevel == 2 ){
+				orderOfLastChildSeq = lastChildSeq.substring(14,16);
+				sequenceNumber = lastChildSeq;			
+			}
+			
+			if( orderOfLastChildSeq.equals("00")){
+				throw new BoardException("마지막 자식 글이 이미 존재합니다.");
+			}
+			
+			long seq = Long.parseLong(sequenceNumber) - decUnit;
+			sequenceNumber = dFormat.format(seq);
+			
+			return sequenceNumber; 
+		}
+		return sequenceNumber;
+		
+	}
+}

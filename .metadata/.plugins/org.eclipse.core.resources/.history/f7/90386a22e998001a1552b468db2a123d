@@ -1,0 +1,28 @@
+package mybatis.guest.session2;
+
+import java.io.*;
+import java.util.*;
+
+import mybatis.guest.model2.BoardRec;
+import org.apache.ibatis.io.Resources;
+import org.apache.ibatis.session.*;
+
+public class BoardRepository
+{
+	private SqlSessionFactory getSqlSessionFatory() {
+		
+		InputStream inputStream;
+		try {
+			inputStream = Resources.getResourceAsStream("mybatis-config2.xml");
+		} catch(IOException e) {
+			throw new IllegalArgumentException(e);
+		}
+		SqlSessionFactory sessFactory = new SqlSessionFactoryBuilder().build(inputStream);
+		return sessFactory;
+	}
+	public Integer deleteBoard(int articleId, String password) {
+		int result = 0;
+		return null;
+	}
+	
+}

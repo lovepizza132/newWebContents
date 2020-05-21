@@ -1,0 +1,9 @@
+package mvc2.board.command;
+
+public class CommandWrite {
+	private String next;
+	
+	public CommandWrite(String next) {
+		this.next = next;
+	}
+}

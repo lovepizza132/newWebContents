@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title> Javascript 객체지향 </title>
+	<script type="text/javascript">
+	
+	// 1. 클래스 선언 - 생성자로 초기화 한다.
+	// 생성자명은 일반적으로 대문자로 시작(function()(함수)인지 클래스인지 구별할려고)
+	var Student = function(name, kor, eng, math){
+		this.name = name;
+		this.kor = kor;
+		this.math = math;
+		this.eng = eng;//멤버변수 선언을 위해서는 반드시 this를 써야함	
+	}
+	
+	/* Student.prototype.sum = function(){
+		return this.kor+this.eng+this.math; //prototype을 사용할 때는 멤버변수를 지칭하기 위해 반드시 this 사용
+	};
+	
+	Student.prototype.info = function(){// 클래스에 동적으로 추가할 때, 클래스명.prototype을 사용함 ------------------->중요
+		return this.name + '님의 평균: ' + s1.sum()/3 + '<br/>';
+	} */
+	
+	
+	Student.prototype = {
+			sum : function(){
+				return this.kor + this.eng + this.math; // sum()에 <br/> 붙으면 안됨
+			},
+			info : function(){
+				return this.name + '님의 평균: ' + this.sum()/3;
+			}
+	};
+	
+	
+	
+	// 2. 객체 생성(클래스 선언하면 반드시 객체 생성하세요) 클래스가 메모리 할당을 받았을 때를 '인스턴스'라 한다.
+	var s1 = new Student('홍길자', 99, 66, 77);
+	document.write( s1.name + '님의 총점: ' + s1.sum() + '<br/>' );
+	document.write(s1.info());
+	
+	
+	var s2 = new Student('홍길숙', 77, 55, 44);
+	document.write( s2.name + '님의 총점: ' + s2.sum() + '<br/>' );
+	document.write(s2.info()); // s1의 객체에만 info를 추가했으니 s2에서 info를 사용할 수 없다.
+	
+	</script>
+</head>
+<body>
+<script>
+
+</script>
+</body>
+</html>

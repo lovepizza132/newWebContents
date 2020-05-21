@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+table#tbl {
+	border : 1px solid hotpink;
+}
+td {
+	width : 100px; height : 60px;
+	background-color : #ffffac;
+}
+
+td.first {
+	background : aliceblue;
+}
+

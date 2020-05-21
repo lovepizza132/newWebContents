@@ -1,0 +1,25 @@
+
+테이블명 : comment_tab
+
+번호	comment_no		number(19) pk
+사용자	user_id		varchar2(20)
+내용	comment_content	varchar2(500)
+날짜 reg_date			date
+
+시퀀스 만들기
+seq_commet
+
+레코드 2~3개 만들고 커밋하기***
+
+
+[참고]DB연결
+	1. JDBC
+	2. Mybatis(ibatis) + Spring
+		-config.xml(Connection파일)
+		-mapper.xml(CRUD파일)
+	3. JPA + Spring Boot 수업안함
+	
+Mybatis 설정
+-chrome에 https://github.com/mybatis/mybatis-3/releases 검색 후 mybatis-3.5.4.zip 다운로드
+
+-zip 내 lib폴더에 있는 파일 JSP WebContent-lib에 다 붙여넣기~

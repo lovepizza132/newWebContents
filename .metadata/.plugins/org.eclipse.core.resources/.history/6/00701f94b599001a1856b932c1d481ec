@@ -1,0 +1,38 @@
+package mvc2.board.command;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+
+import mvc2.board.model.BoardDao;
+import mvc2.board.model.BoardException;
+import mvc2.board.model.BoardRec;
+
+public class CommandWrite implements Command{
+	private String next;
+	
+	public CommandWrite(String next) {
+		this.next = next;
+	}
+
+	@Override
+	public String execute(HttpServletRequest request, HttpServletResponse response) throws CommandException {
+		try {
+			// 한글
+			request.setCharacterEncoding("UTF-8");
+			
+			BoardRec rec = new BoardRec();
+			rec.setWriterName(request.getParameter("writerName"));
+			rec.setTitle(request.getParameter("title"));
+			rec.setContent(request.getParameter("content"));
+			rec.setPassword(request.getParameter("password"));
+			int result = BoardDao.getInstance().insert(rec);
+			request.setAttribute("result", result ); // 속성에 저장
+		} catch (Exception e) {
+			throw new CommandException("CommandWrite.java < 입력시 > " + e.toString() );
+		}
+		return next;
+	}
+	
+	
+}

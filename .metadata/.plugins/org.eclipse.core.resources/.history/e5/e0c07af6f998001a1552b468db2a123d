@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="BoardMapper">
+	
+	<delete id="deleteComment" parameterType="hashmap">
+ 		delete
+ 		from article
+ 		where articleId = #{articleId} and password = #{password}
+	</delete>
+	<select id="getArticleById" parameterType="hashmap" resultType="board">
+		select *
+		from article
+	</select>
+	<select id="selectList" parameterType="hashmap" resultType="board">
+		<![CDATA[
+			select *	
+			from article
+			where sequence_no IN(select sequence_no	from(select sequence_no, rownum as rnum	from(select sequence_no, group_id from(select sequence_no, group_id from article order by sequence_no DESC)	
+			order by group_id, sequence_no DESC))where rnum>= #{firstRow} AND rnum<= #{endRow})
+		]]>
+	</select>
+	
+	<select id="getTotalCount" resultType="int">
+		SELECT count(*) AS cnt FROM article
+	</select>
+</mapper>

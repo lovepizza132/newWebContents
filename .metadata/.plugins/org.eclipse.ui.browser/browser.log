@@ -1,0 +1,315 @@
+
+4월 23, 2020 09:34:37.72 NEW SESSION
+4월 23, 2020 09:34:37.72 [13620:1636:0423/093437.725:ERROR:browser_switcher_service.cc(238)] XXX Init()
+4월 23, 2020 09:34:40.83 [13620:1636:0423/093440.831:ERROR:device_event_log_impl.cc(162)] [09:34:40.831] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+4월 23, 2020 09:35:04.07 [14068:7116:0423/093504.074:ERROR:browser_switcher_service.cc(238)] XXX Init()
+4월 23, 2020 09:35:07.25 [14068:7116:0423/093507.259:ERROR:device_event_log_impl.cc(162)] [09:35:07.258] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+4월 23, 2020 09:37:19.85 [11512:10464:0423/093719.853:ERROR:browser_switcher_service.cc(238)] XXX Init()
+4월 23, 2020 09:37:25.04 [11512:10464:0423/093725.043:ERROR:device_event_log_impl.cc(162)] [09:37:25.043] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+4월 23, 2020 09:37:48.92 [7264:732:0423/093748.924:ERROR:browser_switcher_service.cc(238)] XXX Init()
+4월 23, 2020 09:38:00.63 [11364:6812:0423/093800.633:ERROR:browser_switcher_service.cc(238)] XXX Init()
+4월 23, 2020 09:38:12.91 [5108:2824:0423/093812.912:ERROR:browser_switcher_service.cc(238)] XXX Init()
+4월 23, 2020 09:38:21.70 [14324:9492:0423/093821.707:ERROR:browser_switcher_service.cc(238)] XXX Init()
+4월 23, 2020 09:39:47.49 [8268:12740:0423/093947.491:ERROR:browser_switcher_service.cc(238)] XXX Init()
+4월 23, 2020 09:39:50.68 [8268:12740:0423/093950.680:ERROR:device_event_log_impl.cc(162)] [09:39:50.680] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+4월 23, 2020 09:40:00.29 [5328:9768:0423/094000.293:ERROR:browser_switcher_service.cc(238)] XXX Init()
+4월 23, 2020 09:40:17.47 [7712:12864:0423/094017.472:ERROR:browser_switcher_service.cc(238)] XXX Init()
+
+4월 23, 2020 09:41:02.63 NEW SESSION
+4월 23, 2020 09:41:02.63 [10020:5188:0423/094102.635:ERROR:browser_switcher_service.cc(238)] XXX Init()
+4월 23, 2020 09:41:10.82 [10020:5188:0423/094110.822:ERROR:device_event_log_impl.cc(162)] [09:41:10.822] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+4월 23, 2020 09:43:29.82 [7304:13328:0423/094329.822:ERROR:browser_switcher_service.cc(238)] XXX Init()
+4월 23, 2020 09:45:17.00 [1636:2844:0423/094517.006:ERROR:browser_switcher_service.cc(238)] XXX Init()
+4월 23, 2020 09:45:22.13 [3660:11272:0423/094522.135:ERROR:browser_switcher_service.cc(238)] XXX Init()
+4월 23, 2020 09:45:33.03 [2804:6692:0423/094533.032:ERROR:browser_switcher_service.cc(238)] XXX Init()
+4월 23, 2020 09:45:39.44 [9564:10464:0423/094539.440:ERROR:browser_switcher_service.cc(238)] XXX Init()
+4월 23, 2020 09:45:45.61 [9564:10464:0423/094545.611:ERROR:device_event_log_impl.cc(162)] [09:45:45.611] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+4월 23, 2020 09:47:38.83 [9556:11756:0423/094738.839:ERROR:browser_switcher_service.cc(238)] XXX Init()
+
+4월 24, 2020 09:42:12.95 NEW SESSION
+4월 24, 2020 09:42:12.95 [14080:9972:0424/094212.952:ERROR:browser_switcher_service.cc(238)] XXX Init()
+4월 24, 2020 09:44:37.21 [11608:3936:0424/094437.210:ERROR:browser_switcher_service.cc(238)] XXX Init()
+4월 24, 2020 09:44:45.44 [11608:3936:0424/094445.449:ERROR:device_event_log_impl.cc(162)] [09:44:45.449] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+
+4월 29, 2020 21:02:45.82 NEW SESSION
+4월 29, 2020 21:02:45.82 [6640:14420:0429/210245.824:ERROR:browser_switcher_service.cc(238)] XXX Init()
+4월 29, 2020 21:02:54.98 [6640:14420:0429/210254.982:ERROR:device_event_log_impl.cc(162)] [21:02:54.982] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+
+4월 30, 2020 15:37:41.57 NEW SESSION
+4월 30, 2020 15:37:41.57 [8:3216:0430/153741.572:ERROR:browser_switcher_service.cc(238)] XXX Init()
+4월 30, 2020 15:37:48.86 [8:3216:0430/153748.860:ERROR:device_event_log_impl.cc(162)] [15:37:48.860] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+
+5월 01, 2020 09:25:36.82 NEW SESSION
+5월 01, 2020 09:25:36.82 [12684:5864:0501/092536.822:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 01, 2020 09:25:38.20 [12684:5864:0501/092538.201:ERROR:device_event_log_impl.cc(162)] [09:25:38.201] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+
+5월 04, 2020 09:40:42.98 NEW SESSION
+5월 04, 2020 09:40:42.98 [12120:3968:0504/094042.987:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 04, 2020 09:40:52.22 [12120:3968:0504/094052.229:ERROR:device_event_log_impl.cc(162)] [09:40:52.229] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 04, 2020 10:18:59.89 [13696:1396:0504/101859.897:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 04, 2020 10:19:05.06 [13696:1396:0504/101905.063:ERROR:device_event_log_impl.cc(162)] [10:19:05.062] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 04, 2020 10:32:19.80 [1588:8224:0504/103219.802:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 04, 2020 10:32:22.92 [1588:8224:0504/103222.920:ERROR:device_event_log_impl.cc(162)] [10:32:22.920] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 04, 2020 10:35:10.01 [5216:124:0504/103510.013:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 04, 2020 10:35:20.19 [5216:124:0504/103520.198:ERROR:device_event_log_impl.cc(162)] [10:35:20.198] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 04, 2020 11:11:35.60 [11100:5956:0504/111135.608:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 04, 2020 11:11:39.79 [11100:5956:0504/111139.795:ERROR:device_event_log_impl.cc(162)] [11:11:39.795] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 04, 2020 13:50:05.95 [11100:8572:0504/135005.958:ERROR:socket_stream.cc(218)] Closing stream with result -2
+5월 04, 2020 13:50:25.40 [11100:8572:0504/135025.407:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+5월 04, 2020 19:12:48.25 [11100:5956:0504/191248.252:ERROR:CONSOLE(61)] "URIError: URI malformed URIError: URI malformed
+5월 04, 2020 19:12:48.26     at decodeURI (<anonymous>)
+5월 04, 2020 19:12:48.26     at Automapping._createBinding (devtools://devtools/bundled/persistence/Automapping.js:48:29)
+5월 04, 2020 19:12:48.26     at Automapping._computeNetworkStatus (devtools://devtools/bundled/persistence/Automapping.js:25:33)
+5월 04, 2020 19:12:48.27     at Automapping._onUISourceCodeAdded (devtools://devtools/bundled/persistence/Automapping.js:17:208)
+5월 04, 2020 19:12:48.27     at devtools://devtools/bundled/persistence/Automapping.js:1:1097
+5월 04, 2020 19:12:48.28     at WorkspaceImpl.dispatchEventToListeners (devtools://devtools/bundled/common/Object.js:12:173)
+5월 04, 2020 19:12:48.28     at ContentProviderBasedProject.addUISourceCode (devtools://devtools/bundled/workspace/WorkspaceImpl.js:37:157)
+5월 04, 2020 19:12:48.28     at ContentProviderBasedProject.addUISourceCodeWithProvider (devtools://devtools/bundled/bindings/ContentProviderBasedProject.js:25:207)
+5월 04, 2020 19:12:48.29     at new Binding (devtools://devtools/bundled/bindings/ResourceMapping.js:44:317)
+5월 04, 2020 19:12:48.29     at ModelInfo._resourceAdded (devtools://devtools/bundled/bindings/ResourceMapping.js:35:67)", source: devtools://devtools/bundled/host/InspectorFrontendHost.js (61)
+5월 04, 2020 19:12:49.33 [11100:5956:0504/191249.338:ERROR:CONSOLE(61)] "URIError: URI malformed URIError: URI malformed
+5월 04, 2020 19:12:49.34     at decodeURI (<anonymous>)
+5월 04, 2020 19:12:49.34     at Automapping._createBinding (devtools://devtools/bundled/persistence/Automapping.js:48:29)
+5월 04, 2020 19:12:49.35     at Automapping._computeNetworkStatus (devtools://devtools/bundled/persistence/Automapping.js:25:33)
+5월 04, 2020 19:12:49.35     at Automapping._onUISourceCodeAdded (devtools://devtools/bundled/persistence/Automapping.js:17:208)
+5월 04, 2020 19:12:49.36     at devtools://devtools/bundled/persistence/Automapping.js:1:1097
+5월 04, 2020 19:12:49.36     at WorkspaceImpl.dispatchEventToListeners (devtools://devtools/bundled/common/Object.js:12:173)
+5월 04, 2020 19:12:49.36     at ContentProviderBasedProject.addUISourceCode (devtools://devtools/bundled/workspace/WorkspaceImpl.js:37:157)
+5월 04, 2020 19:12:49.37     at ContentProviderBasedProject.addUISourceCodeWithProvider (devtools://devtools/bundled/bindings/ContentProviderBasedProject.js:25:207)
+5월 04, 2020 19:12:49.37     at new Binding (devtools://devtools/bundled/bindings/ResourceMapping.js:44:317)
+5월 04, 2020 19:12:49.38     at ModelInfo._resourceAdded (devtools://devtools/bundled/bindings/ResourceMapping.js:35:67)", source: devtools://devtools/bundled/host/InspectorFrontendHost.js (61)
+5월 04, 2020 19:13:02.40 [11100:5956:0504/191302.403:ERROR:CONSOLE(61)] "TypeError: Cannot read property '_resources' of undefined TypeError: Cannot read property '_resources' of undefined
+5월 04, 2020 19:13:02.41     at ModelInfo._removeFrameResources (devtools://devtools/bundled/bindings/ResourceMapping.js:37:59)
+5월 04, 2020 19:13:02.42     at ModelInfo._frameWillNavigate (devtools://devtools/bundled/bindings/ResourceMapping.js:38:57)
+5월 04, 2020 19:13:02.42     at ResourceTreeModel.dispatchEventToListeners (devtools://devtools/bundled/common/Object.js:12:173)
+5월 04, 2020 19:13:02.43     at ResourceTreeModel._frameNavigated (devtools://devtools/bundled/sdk/ResourceTreeModel.js:25:6)
+5월 04, 2020 19:13:02.43     at PageDispatcher.frameNavigated (devtools://devtools/bundled/sdk/ResourceTreeModel.js:122:47)
+5월 04, 2020 19:13:02.44     at _DispatcherPrototype.dispatch (devtools://devtools/bundled/protocol/InspectorBackend.js:94:155)
+5월 04, 2020 19:13:02.44     at SessionRouter._onMessage (devtools://devtools/bundled/protocol/InspectorBackend.js:54:41)
+5월 04, 2020 19:13:02.45     at MainConnection._dispatchMessage (devtools://devtools/bundled/sdk/Connections.js:5:61)
+5월 04, 2020 19:13:02.45     at ObjectWrapper.dispatchEventToListeners (devtools://devtools/bundled/common/Object.js:12:173)
+5월 04, 2020 19:13:02.45     at innerDispatch (devtools://devtools/bundled/host/InspectorFrontendHost.js:61:90)", source: devtools://devtools/bundled/host/InspectorFrontendHost.js (61)
+5월 04, 2020 19:13:04.55 [11100:5956:0504/191304.553:ERROR:CONSOLE(61)] "TypeError: Cannot read property '_resources' of undefined TypeError: Cannot read property '_resources' of undefined
+5월 04, 2020 19:13:04.57     at ModelInfo._removeFrameResources (devtools://devtools/bundled/bindings/ResourceMapping.js:37:59)
+5월 04, 2020 19:13:04.57     at ModelInfo._frameWillNavigate (devtools://devtools/bundled/bindings/ResourceMapping.js:38:57)
+5월 04, 2020 19:13:04.58     at ResourceTreeModel.dispatchEventToListeners (devtools://devtools/bundled/common/Object.js:12:173)
+5월 04, 2020 19:13:04.58     at ResourceTreeModel._frameNavigated (devtools://devtools/bundled/sdk/ResourceTreeModel.js:25:6)
+5월 04, 2020 19:13:04.58     at PageDispatcher.frameNavigated (devtools://devtools/bundled/sdk/ResourceTreeModel.js:122:47)
+5월 04, 2020 19:13:04.59     at _DispatcherPrototype.dispatch (devtools://devtools/bundled/protocol/InspectorBackend.js:94:155)
+5월 04, 2020 19:13:04.59     at SessionRouter._onMessage (devtools://devtools/bundled/protocol/InspectorBackend.js:54:41)
+5월 04, 2020 19:13:04.59     at MainConnection._dispatchMessage (devtools://devtools/bundled/sdk/Connections.js:5:61)
+5월 04, 2020 19:13:04.60     at ObjectWrapper.dispatchEventToListeners (devtools://devtools/bundled/common/Object.js:12:173)
+5월 04, 2020 19:13:04.60     at innerDispatch (devtools://devtools/bundled/host/InspectorFrontendHost.js:61:90)", source: devtools://devtools/bundled/host/InspectorFrontendHost.js (61)
+
+5월 06, 2020 09:33:26.28 NEW SESSION
+5월 06, 2020 09:33:26.28 [2428:9004:0506/093326.279:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 06, 2020 09:33:32.73 [2428:9004:0506/093332.731:ERROR:device_event_log_impl.cc(162)] [09:33:32.731] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 06, 2020 19:08:58.54 [2428:11628:0506/190858.547:ERROR:socket_stream.cc(218)] Closing stream with result -2
+5월 06, 2020 19:34:03.32 [2428:11628:0506/193403.329:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+5월 06, 2020 20:10:00.84 [2428:11628:0506/201000.844:ERROR:socket_stream.cc(218)] Closing stream with result -2
+5월 06, 2020 20:10:37.48 [2428:11628:0506/201037.489:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+
+5월 08, 2020 09:28:16.42 NEW SESSION
+5월 08, 2020 09:28:16.42 [10412:6484:0508/092816.421:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 08, 2020 09:28:18.94 [10412:6484:0508/092818.947:ERROR:device_event_log_impl.cc(162)] [09:28:18.947] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 08, 2020 10:20:53.37 [10412:6484:0508/102053.374:ERROR:CONSOLE(3)] "Uncaught TypeError: Cannot read property 'slice' of null", source: devtools://devtools/bundled/ui/Toolbar.js (3)
+5월 08, 2020 10:53:01.40 [7772:14960:0508/105301.405:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 08, 2020 10:53:06.51 [7772:14960:0508/105306.519:ERROR:device_event_log_impl.cc(162)] [10:53:06.534] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 08, 2020 14:20:05.25 [7772:3144:0508/142005.259:ERROR:socket_stream.cc(218)] Closing stream with result -2
+5월 08, 2020 14:20:16.64 [7772:3144:0508/142016.643:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+5월 08, 2020 16:09:57.09 [7772:3144:0508/160957.093:ERROR:socket_stream.cc(218)] Closing stream with result -2
+
+5월 11, 2020 09:23:59.74 NEW SESSION
+5월 11, 2020 09:23:59.74 [4528:5540:0511/092359.739:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 11, 2020 09:24:05.25 [4528:5540:0511/092405.254:ERROR:device_event_log_impl.cc(162)] [09:24:05.254] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 11, 2020 10:12:53.53 [13920:1228:0511/101253.530:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 11, 2020 10:12:59.80 [13920:1228:0511/101259.800:ERROR:device_event_log_impl.cc(162)] [10:12:59.800] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 11, 2020 10:13:34.19 [6864:3248:0511/101334.192:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 11, 2020 10:13:42.30 [6864:3248:0511/101342.307:ERROR:device_event_log_impl.cc(162)] [10:13:42.307] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 11, 2020 10:13:50.02 [7280:4660:0511/101350.025:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 11, 2020 10:13:54.20 [7280:4660:0511/101354.205:ERROR:device_event_log_impl.cc(162)] [10:13:54.206] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 11, 2020 10:14:00.42 [12232:5136:0511/101400.425:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 11, 2020 10:14:08.61 [12232:5136:0511/101408.614:ERROR:device_event_log_impl.cc(162)] [10:14:08.614] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 11, 2020 10:14:33.88 [6432:8620:0511/101433.881:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 11, 2020 10:14:35.07 [6432:8620:0511/101435.078:ERROR:device_event_log_impl.cc(162)] [10:14:35.078] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 11, 2020 10:19:04.22 [7620:6788:0511/101904.229:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 11, 2020 10:19:12.38 [7620:6788:0511/101912.386:ERROR:device_event_log_impl.cc(162)] [10:19:12.386] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 11, 2020 11:32:03.72 [4352:7752:0511/113203.721:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 11, 2020 11:32:10.84 [4352:7752:0511/113210.846:ERROR:device_event_log_impl.cc(162)] [11:32:10.845] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 11, 2020 11:57:48.50 [14988:9680:0511/115748.508:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 11, 2020 11:58:00.64 [14988:9680:0511/115800.648:ERROR:device_event_log_impl.cc(162)] [11:58:00.648] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 11, 2020 12:02:34.50 [10248:13676:0511/120234.500:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 11, 2020 12:02:38.64 [10248:13676:0511/120238.641:ERROR:device_event_log_impl.cc(162)] [12:02:38.642] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 11, 2020 12:44:24.22 [5432:11252:0511/124424.222:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 11, 2020 12:44:32.00 [5432:11252:0511/124432.003:ERROR:device_event_log_impl.cc(162)] [12:44:32.003] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 11, 2020 13:49:44.75 [5432:14144:0511/134944.758:ERROR:socket_stream.cc(218)] Closing stream with result -2
+5월 11, 2020 13:50:57.34 [5432:14144:0511/135057.342:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+
+5월 11, 2020 17:49:29.99 NEW SESSION
+5월 11, 2020 17:49:29.99 [9952:3600:0511/174929.998:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 11, 2020 17:49:39.31 [9952:3600:0511/174939.319:ERROR:device_event_log_impl.cc(162)] [17:49:39.319] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 11, 2020 18:17:34.67 [11380:11080:0511/181734.676:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 11, 2020 18:17:37.90 [11380:11080:0511/181737.901:ERROR:device_event_log_impl.cc(162)] [18:17:37.901] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+
+5월 11, 2020 18:24:45.49 NEW SESSION
+5월 11, 2020 18:24:45.49 [8704:6888:0511/182445.497:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 11, 2020 18:24:55.88 [8704:6888:0511/182455.882:ERROR:device_event_log_impl.cc(162)] [18:24:55.881] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 11, 2020 18:25:46.65 [11440:7100:0511/182546.655:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 11, 2020 18:25:55.95 [11440:7100:0511/182555.957:ERROR:device_event_log_impl.cc(162)] [18:25:55.957] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+
+5월 12, 2020 09:31:18.49 NEW SESSION
+5월 12, 2020 09:31:18.49 [13116:2540:0512/093118.498:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 12, 2020 09:31:30.21 [13116:2540:0512/093130.211:ERROR:device_event_log_impl.cc(162)] [09:31:30.211] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 12, 2020 11:44:00.27 [14740:13704:0512/114400.273:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 12, 2020 11:44:02.46 [14740:13704:0512/114402.468:ERROR:device_event_log_impl.cc(162)] [11:44:02.469] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 12, 2020 12:51:11.79 [8160:10600:0512/125111.790:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 12, 2020 12:51:15.28 [8160:10600:0512/125115.281:ERROR:device_event_log_impl.cc(162)] [12:51:15.281] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 12, 2020 12:53:36.85 [2564:12176:0512/125336.851:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 12, 2020 12:53:43.06 [2564:12176:0512/125343.067:ERROR:device_event_log_impl.cc(162)] [12:53:43.068] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 12, 2020 12:56:18.77 [1060:9288:0512/125618.775:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 12, 2020 12:56:26.97 [1060:9288:0512/125626.976:ERROR:device_event_log_impl.cc(162)] [12:56:26.976] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 12, 2020 13:50:59.91 [1060:6468:0512/135059.916:ERROR:socket_stream.cc(218)] Closing stream with result -2
+5월 12, 2020 13:51:23.33 [1060:6468:0512/135123.338:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+5월 12, 2020 15:50:28.47 [7616:144:0512/155028.476:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 12, 2020 15:57:38.74 [12868:6608:0512/155738.741:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 12, 2020 15:57:46.01 [12868:6608:0512/155746.015:ERROR:device_event_log_impl.cc(162)] [15:57:46.016] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 12, 2020 18:49:23.82 [10084:252:0512/184923.820:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 12, 2020 18:49:26.05 [10084:252:0512/184926.059:ERROR:device_event_log_impl.cc(162)] [18:49:26.058] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+
+5월 13, 2020 09:55:51.81 NEW SESSION
+5월 13, 2020 09:55:51.81 [13160:2000:0513/095551.813:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 13, 2020 09:55:53.59 [13160:2000:0513/095553.593:ERROR:device_event_log_impl.cc(162)] [09:55:53.593] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 13, 2020 09:55:59.54 [13896:10976:0513/095559.546:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 13, 2020 09:56:02.80 [13896:10976:0513/095602.808:ERROR:device_event_log_impl.cc(162)] [09:56:02.809] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 13, 2020 10:49:44.37 [2908:9292:0513/104944.375:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 13, 2020 10:49:52.54 [2908:9292:0513/104952.542:ERROR:device_event_log_impl.cc(162)] [10:49:52.542] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 13, 2020 11:07:54.86 [12996:8128:0513/110754.860:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 13, 2020 11:08:04.05 [12996:8128:0513/110804.056:ERROR:device_event_log_impl.cc(162)] [11:08:04.056] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 13, 2020 11:08:17.84 [14516:4524:0513/110817.844:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 13, 2020 11:08:21.02 [14516:4524:0513/110821.029:ERROR:device_event_log_impl.cc(162)] [11:08:21.029] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 13, 2020 11:48:50.65 [10040:5240:0513/114850.656:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 13, 2020 11:48:55.25 [10040:5240:0513/114855.253:ERROR:device_event_log_impl.cc(162)] [11:48:55.253] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 13, 2020 12:03:50.03 [5296:2336:0513/120350.037:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 13, 2020 12:03:59.57 [5296:2336:0513/120359.571:ERROR:device_event_log_impl.cc(162)] [12:03:59.570] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 13, 2020 12:07:03.21 [3652:2648:0513/120703.211:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 13, 2020 12:07:05.46 [3652:2648:0513/120705.465:ERROR:device_event_log_impl.cc(162)] [12:07:05.464] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 13, 2020 12:10:52.38 [696:3672:0513/121052.381:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 13, 2020 12:11:02.58 [696:3672:0513/121102.589:ERROR:device_event_log_impl.cc(162)] [12:11:02.589] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 13, 2020 12:49:51.86 [14700:7816:0513/124951.861:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 13, 2020 12:49:57.09 [6712:3980:0513/124957.094:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 13, 2020 12:50:05.26 [6712:3980:0513/125005.265:ERROR:device_event_log_impl.cc(162)] [12:50:05.265] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 13, 2020 13:02:10.74 [6712:4964:0513/130210.748:ERROR:socket_stream.cc(218)] Closing stream with result -2
+5월 13, 2020 13:02:29.92 [6712:4964:0513/130229.925:ERROR:socket_stream.cc(218)] Closing stream with result -2
+5월 13, 2020 13:12:44.11 [12044:8:0513/131244.119:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 13, 2020 13:12:48.19 [12044:8:0513/131248.195:ERROR:device_event_log_impl.cc(162)] [13:12:48.196] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 13, 2020 13:23:08.59 [12044:12772:0513/132308.593:ERROR:socket_stream.cc(218)] Closing stream with result -2
+5월 13, 2020 13:49:40.93 [12044:12772:0513/134940.931:ERROR:socket_stream.cc(218)] Closing stream with result -2
+5월 13, 2020 13:49:55.65 [12044:12772:0513/134955.655:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+5월 13, 2020 14:59:51.35 [2132:2648:0513/145951.359:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 13, 2020 15:00:00.55 [2132:2648:0513/150000.552:ERROR:device_event_log_impl.cc(162)] [15:00:00.552] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 13, 2020 15:06:22.91 [8044:8584:0513/150622.918:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 13, 2020 15:06:29.06 [8044:8584:0513/150629.063:ERROR:device_event_log_impl.cc(162)] [15:06:29.063] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+
+5월 13, 2020 15:23:58.90 NEW SESSION
+5월 13, 2020 15:23:58.90 [6664:9316:0513/152358.908:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 13, 2020 15:24:03.09 [6664:9316:0513/152403.093:ERROR:device_event_log_impl.cc(162)] [15:24:03.093] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 13, 2020 16:04:55.94 [11228:5820:0513/160455.947:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 13, 2020 16:05:02.15 [11228:5820:0513/160502.154:ERROR:device_event_log_impl.cc(162)] [16:05:02.154] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 13, 2020 16:17:58.88 [13604:11392:0513/161758.887:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 13, 2020 16:18:04.00 [13604:11392:0513/161804.008:ERROR:device_event_log_impl.cc(162)] [16:18:04.009] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 13, 2020 16:30:26.66 [13604:812:0513/163026.662:ERROR:mcs_client.cc(755)] Received close command, resetting connection.
+5월 13, 2020 16:38:30.48 [13252:6992:0513/163830.485:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 13, 2020 16:38:35.03 [13252:6992:0513/163835.036:ERROR:device_event_log_impl.cc(162)] [16:38:35.035] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 13, 2020 17:11:36.11 [8676:3792:0513/171136.119:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 13, 2020 17:11:37.34 [8676:3792:0513/171137.342:ERROR:device_event_log_impl.cc(162)] [17:11:37.342] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 13, 2020 17:11:45.72 [15268:8976:0513/171145.723:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 13, 2020 17:11:46.00 [15268:8976:0513/171145.999:ERROR:device_event_log_impl.cc(162)] [17:11:46.000] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 13, 2020 17:11:54.54 [7636:13040:0513/171154.548:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 13, 2020 17:12:00.69 [7636:13040:0513/171200.691:ERROR:device_event_log_impl.cc(162)] [17:12:00.692] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 13, 2020 18:15:19.00 [13828:14976:0513/181519.006:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 13, 2020 18:15:31.12 [13828:14976:0513/181531.127:ERROR:device_event_log_impl.cc(162)] [18:15:31.126] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 13, 2020 18:23:54.88 [5560:4848:0513/182354.889:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 13, 2020 18:24:06.04 [5560:4848:0513/182406.045:ERROR:device_event_log_impl.cc(162)] [18:24:06.045] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 13, 2020 18:24:57.88 [1388:6104:0513/182457.885:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 13, 2020 18:25:02.09 [1388:6104:0513/182502.096:ERROR:device_event_log_impl.cc(162)] [18:25:02.097] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 13, 2020 18:25:17.02 [10504:7684:0513/182517.021:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 13, 2020 18:25:25.17 [10504:7684:0513/182525.172:ERROR:device_event_log_impl.cc(162)] [18:25:25.172] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+
+5월 13, 2020 20:13:35.54 NEW SESSION
+5월 13, 2020 20:13:35.54 [15012:6812:0513/201335.546:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 13, 2020 20:13:40.79 [15012:6812:0513/201340.792:ERROR:device_event_log_impl.cc(162)] [20:13:40.792] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+
+5월 14, 2020 09:49:30.75 NEW SESSION
+5월 14, 2020 09:49:30.75 [696:11116:0514/094930.751:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 14, 2020 09:49:34.65 [696:11116:0514/094934.656:ERROR:device_event_log_impl.cc(162)] [09:49:34.656] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 14, 2020 10:00:07.66 [8308:12756:0514/100007.660:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 14, 2020 10:00:11.02 [8308:12756:0514/100011.027:ERROR:device_event_log_impl.cc(162)] [10:00:11.027] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 14, 2020 10:04:04.17 [4036:12660:0514/100404.172:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 14, 2020 10:05:29.57 [4440:2652:0514/100529.579:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 14, 2020 10:05:36.66 [4440:2652:0514/100536.664:ERROR:device_event_log_impl.cc(162)] [10:05:36.663] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+
+5월 14, 2020 21:14:12.57 NEW SESSION
+5월 14, 2020 21:14:12.57 [13036:6980:0514/211412.573:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 14, 2020 21:14:17.55 [7960:16220:0514/211417.559:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 14, 2020 21:14:26.75 [7960:16220:0514/211426.754:ERROR:device_event_log_impl.cc(162)] [21:14:26.754] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+
+5월 15, 2020 09:53:42.24 NEW SESSION
+5월 15, 2020 09:53:42.24 [10964:17264:0515/095342.242:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 15, 2020 09:54:05.86 [13520:928:0515/095405.868:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 15, 2020 09:54:13.98 [13520:928:0515/095413.983:ERROR:device_event_log_impl.cc(162)] [09:54:13.983] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 15, 2020 11:39:26.35 [4676:9452:0515/113926.359:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 15, 2020 11:39:31.89 [4676:9452:0515/113931.896:ERROR:device_event_log_impl.cc(162)] [11:39:31.897] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 15, 2020 11:51:16.53 [16904:8432:0515/115116.534:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 15, 2020 11:51:20.75 [16904:8432:0515/115120.758:ERROR:device_event_log_impl.cc(162)] [11:51:20.758] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 15, 2020 12:21:53.88 [10580:15620:0515/122153.881:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 15, 2020 12:22:07.39 [10580:15620:0515/122207.396:ERROR:device_event_log_impl.cc(162)] [12:22:07.395] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 15, 2020 12:24:30.81 [3676:5384:0515/122430.814:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 15, 2020 12:24:39.00 [3676:5384:0515/122439.005:ERROR:device_event_log_impl.cc(162)] [12:24:39.004] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 15, 2020 13:49:40.32 [3676:2836:0515/134940.329:ERROR:socket_stream.cc(218)] Closing stream with result -2
+5월 15, 2020 13:49:55.39 [3676:2836:0515/134955.396:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+5월 15, 2020 14:20:22.15 [14056:15740:0515/142022.150:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 15, 2020 14:20:29.27 [14056:15740:0515/142029.271:ERROR:device_event_log_impl.cc(162)] [14:20:29.271] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 15, 2020 15:18:51.52 [1976:5172:0515/151851.529:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 15, 2020 15:18:54.73 [1976:5172:0515/151854.734:ERROR:device_event_log_impl.cc(162)] [15:18:54.733] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 15, 2020 17:27:52.90 [1976:6084:0515/172752.905:ERROR:socket_stream.cc(218)] Closing stream with result -2
+5월 15, 2020 17:28:16.64 [1976:6084:0515/172816.641:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+5월 15, 2020 18:14:07.77 [1976:5172:0515/181407.772:ERROR:page_load_metrics_update_dispatcher.cc(165)] Invalid first_paint 0.772 s for first_image_paint 0.755 s
+5월 15, 2020 18:14:09.65 [1976:5172:0515/181409.658:ERROR:page_load_metrics_update_dispatcher.cc(165)] Invalid first_paint 0.772 s for first_image_paint 0.755 s
+5월 15, 2020 18:14:10.88 [1976:5172:0515/181410.888:ERROR:page_load_metrics_update_dispatcher.cc(165)] Invalid first_paint 0.772 s for first_image_paint 0.755 s
+5월 15, 2020 18:14:13.11 [1976:5172:0515/181413.113:ERROR:page_load_metrics_update_dispatcher.cc(165)] Invalid first_paint 0.772 s for first_image_paint 0.755 s
+
+5월 16, 2020 16:36:11.01 NEW SESSION
+5월 16, 2020 16:36:11.01 [148:1124:0516/163611.009:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 16, 2020 16:36:16.23 [148:1124:0516/163616.231:ERROR:device_event_log_impl.cc(162)] [16:36:16.230] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 16, 2020 18:19:27.06 [15628:1292:0516/181927.061:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 16, 2020 18:19:34.75 [15628:1292:0516/181934.753:ERROR:device_event_log_impl.cc(162)] [18:19:34.753] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+
+5월 18, 2020 12:19:36.83 NEW SESSION
+5월 18, 2020 12:19:36.83 [10928:8784:0518/121936.829:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 18, 2020 12:19:51.76 [12328:9784:0518/121951.764:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 18, 2020 12:19:57.05 [12328:9784:0518/121957.051:ERROR:device_event_log_impl.cc(162)] [12:19:57.051] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 18, 2020 13:49:19.39 [12328:7644:0518/134919.390:ERROR:socket_stream.cc(218)] Closing stream with result -2
+5월 18, 2020 13:49:52.61 [12328:7644:0518/134952.611:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+
+5월 18, 2020 20:19:02.23 NEW SESSION
+5월 18, 2020 20:19:02.23 [2044:7936:0518/201902.232:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 18, 2020 20:19:11.90 [2044:7936:0518/201911.905:ERROR:device_event_log_impl.cc(162)] [20:19:11.905] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 18, 2020 20:24:14.37 [9092:3760:0518/202414.371:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 18, 2020 20:24:19.03 [9092:3760:0518/202419.031:ERROR:device_event_log_impl.cc(162)] [20:24:19.032] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 18, 2020 21:28:34.30 [10388:4572:0518/212834.301:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 18, 2020 21:28:52.32 [16208:16552:0518/212852.326:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 18, 2020 21:29:01.45 [16208:16552:0518/212901.452:ERROR:device_event_log_impl.cc(162)] [21:29:01.453] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+
+5월 19, 2020 20:46:28.96 NEW SESSION
+5월 19, 2020 20:46:28.96 [11400:11792:0519/204628.960:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 19, 2020 20:46:35.16 [11400:11792:0519/204635.165:ERROR:device_event_log_impl.cc(162)] [20:46:35.165] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 19, 2020 21:28:33.73 [11400:8760:0519/212833.734:ERROR:socket_stream.cc(218)] Closing stream with result -2
+5월 19, 2020 21:28:44.62 [11400:8760:0519/212844.628:ERROR:connection_factory_impl.cc(420)] Failed to connect to MCS endpoint with error -106
+5월 19, 2020 22:14:16.37 [11184:244:0519/221416.374:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 19, 2020 22:14:26.59 [11184:244:0519/221426.590:ERROR:device_event_log_impl.cc(162)] [22:14:26.590] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+5월 19, 2020 22:18:18.71 [3744:11716:0519/221818.713:ERROR:browser_switcher_service.cc(238)] XXX Init()
+5월 19, 2020 22:18:31.85 [3744:11716:0519/221831.852:ERROR:device_event_log_impl.cc(162)] [22:18:31.852] Bluetooth: bluetooth_adapter_winrt.cc:1055 Getting Default Adapter failed.
+
+5월 20, 2020 09:30:27.72 NEW SESSION
+5월 20, 2020 09:30:27.72 [11744:13308:0520/093027.721:ERROR:device_event_log_impl.cc(208)] [09:30:27.721] Bluetooth: bluetooth_adapter_winrt.cc:1060 Getting Default Adapter failed.
+5월 20, 2020 09:53:38.86 [6216:2904:0520/095338.862:ERROR:device_event_log_impl.cc(208)] [09:53:38.862] Bluetooth: bluetooth_adapter_winrt.cc:1060 Getting Default Adapter failed.

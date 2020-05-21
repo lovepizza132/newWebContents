@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> 이벤트 처리 취소</title>
+<script>
+	/* 버블링 : 이벤트의 부모요소에 전달되는 단계
+	
+			- stopPropagation() : 이벤트 전달 취소
+			- preventDefault() : 이벤트 본래의 동작 취소
+	*/
+window.onload = function(){
+	var inner = document.getElementById('inner');
+	inner.addEventListener('click', function(evt){ //evt : 이벤트객체를 받는 변수
+		window.alert("inner 영역에서 클릭이벤트");
+		evt.preventDefault();
+		evt.stopPropagation();//둘다 쓴다 보통 다른애들 똥통 통통
+	});
+				
+}
+
+</script>
+</head>
+<body>
+	<div id='outer'>
+		<p>바깥 부분</p>
+		<div id='inner'>
+			<a href='https://www1.president.go.kr/petitions'>안쪽부분</a>
+		</div>
+	</div>
+</body>
+</html>

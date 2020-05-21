@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>광고페이지</title>
+<script type="text/javascript" src="../5_jquery_class/lib/jquery-3.5.1.min.js"></script>
+<script type="text/javascript"   src="js/jquery.cookie.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('#closeWin').click(function(){
+		//만일 체크 되었다면 cookie에 저장
+		//cookie-name: Promotion, cookie-value: NO, expired-date: 1
+		if($('input[type="checkbox"]').is(':checked')){
+			$.cookie('Promotion', 'no', {expires: 1});
+		}
+		window.close();
+	});
+});
+</script>  
+</head>
+<body>
+<form id='frm'>
+<img alt="책" src="./images/bestbook_list_5.png">1+1 특별 이벤트<img alt="책" src="./images/bestbook_list_7.png"><br/>
+<label class='popInfo'>이 페이지를 오늘 하루 열지 않겠습니다.</label>
+<input class='popInfo'type="checkbox">
+<input class='popInfo'type='button' id='closeWin' name='closeWin' value='닫기'/>
+</form>
+</body>
+</html>

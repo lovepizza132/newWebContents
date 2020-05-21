@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> 새로운 for 문장 </title>
+<script type="text/javascript">
+
+// 1. for...in :  요소를 순서대로 처리하기
+
+var  arr = ['송혜교', '김태희', '전지현' ];
+for(var i=0; i<arr.length; i++){
+	document.writeln(arr[i] + "<br/>");
+}
+
+for(var str in arr){
+	alert(str);
+	document.writeln(arr[str] + "<br/>");
+}
+/*
+  for(String m : arr) {}
+ 자바에서의 향상된 for 문
+ */
+ 
+ 
+var obj = { first:'길동', last:'홍', age:30, height:150.99}; //제이슨 방식
+for(var i in obj){
+	document.writeln(i + ": " + obj[i] + "<br/>"); // i에 key들이 저장(객체에서는 문자열로 가져옴), key값 출력
+	document.writeln(obj['first'] + "<br/>"); // 길동 출력 -> 객체에서 ['key']를 적으면 key값을 출력할 수 있다.
+}
+ 
+//----------------------------------------------------
+// 2. for...of  (es6) : 열거형의 요소를 순서대로 처리하기
+
+
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

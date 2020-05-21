@@ -1,0 +1,25 @@
+package mcv2.board.control;
+
+import java.util.HashMap;
+
+import javax.servlet.http.HttpServlet;
+
+/**
+ * Servlet implementation class BoardControl
+ */
+public class BoardControl extends HttpServlet{
+	
+	private HashMap commandMap;
+	
+	
+	public BoardControl() { // 생성자 함수
+		super();
+		initCommand();
+	}
+	
+	private void initCommand() {
+		commandMap = new HashMap();
+		
+		commandMap.put("list-page", new CommandList(""));
+	}
+}

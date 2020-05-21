@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="BoardMapper">
+	
+	<delete id="deleteBoard" parameterType="hashmap">
+ 		delete
+ 		from article
+ 		where article_id = #{articleId} and password = #{password}
+	</delete>
+	
+	<select id="getArticleById" parameterType="hashmap" resultType="board">
+		SELECT * FROM ARTICLE WHERE ARTICLE_ID = #{articleId}
+	</select>
+	
+	<select id="selectList" parameterType="hashmap" resultType="board">
+		<![CDATA[
+			select *	
+			from article
+			where sequence_no IN(select sequence_no	from(select sequence_no, rownum as rnum	from(select sequence_no, group_id from(select sequence_no, group_id from article order by sequence_no DESC)	
+			order by group_id, sequence_no DESC))where rnum>= #{firstRow} AND rnum<= #{endRow})
+		]]>
+	</select>
+	
+	<select id="getTotalCount" resultType="int">	
+		SELECT count(*) FROM article
+	</select>
+	
+	<update id="increaseReadCount" parameterType="int">
+		UPDATE ARTICLE SET READ_COUNT=READ_COUNT+1 WHERE ARTICLE_ID=#{articleId}
+	</update>
+	
+	<select id="getGroupId">
+		SELECT seq_GROUP_ID_ARTICLE.nextval FROM dual
+	</select>
+	
+	<insert id="insert">
+		INSERT INTO article(ARTICLE_ID, GROUP_ID, SEQUENCE_NO, POSTING_DATE, 
+		READ_COUNT, WRITER_NAME, PASSWORD, TITLE, CONTENT) 
+		VALUES(seq_ARTICLE_ID_ARTICLE.nextval, #{groupId}, #{squenceNo}, sysdate, 0, #{writerName}, ?, ?, ?)
+	</insert>
+	
+</mapper>

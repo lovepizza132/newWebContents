@@ -1,0 +1,72 @@
+package mybatis.guest.service2;
+
+import java.util.*;
+
+
+import mybatis.guest.model2.*;
+import mybatis.guest.session2.*;
+
+public class BoardService {
+	
+	private int totalRecCount;		// 전체 레코드 수	
+	private int pageTotalCount;		// 전체 페이지 수
+	private int countPerPage = 5;	// 한페이지당 레코드 수
+	
+	private static BoardService service;
+	 
+	public static BoardService getInstance(){
+		if( service == null) service = new BoardService();
+		return service;
+	}
+	private BoardService() {} //이걸 안하면 디폴트값으로 public CommentService(){}생성자 생성 그러면 new로 계속 만들어져서 꼭 해야함
+	
+	BoardRepository repo = new BoardRepository();
+	
+	// 목록보기
+	public List<BoardRec> getArticleList(String pNum){
+		int pageNum=1;
+		if(pNum != null) pageNum = Integer.parseInt(pNum);
+		/*
+		 *	pageNum		firstRow	endRow
+		 *		1			1			5
+		 *		2			6			10
+		 *		3			11			15
+		 *
+		 */
+		int firstRow = (pageNum-1)*countPerPage+1;
+		int endRow = pageNum*countPerPage;
+		
+		List<BoardRec> mList = repo.selectList(firstRow, endRow);			
+		return mList;
+	}
+	
+	// 입력하기
+	
+	
+	// view보기
+	public BoardRec getArticleById(String id) throws BoardException{
+		int articleId = 0;
+		if(id != null) articleId = Integer.parseInt(id);
+		BoardRec board = repo.getArticleById(articleId);
+		try {
+			repo.increaseReadCount(articleId);// view화면 open시 마다 조회수 증가
+		} catch (mybatis.guest.session2.BoardException e) {
+			System.out.println("조회수 함수 오류");
+			e.printStackTrace();
+		} 
+		return board;
+	}
+	// 삭제하기
+	public int delete( String id, String password ) throws BoardException{
+		
+		// DB delete
+		int article_id = 0;
+		if( id!=null ) article_id = Integer.parseInt( id );
+		int result = repo.deleteBoard(article_id, password);
+		return result;
+	}
+	
+	// 수정하기
+	
+	
+}

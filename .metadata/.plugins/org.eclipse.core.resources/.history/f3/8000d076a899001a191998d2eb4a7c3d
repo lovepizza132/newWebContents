@@ -1,0 +1,33 @@
+package mvc2.board.command;
+
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import mvc.guest.command.Command;
+import mvc.guest.command.CommandException;
+import mvc2.board.model.BoardDao;
+import mvc2.board.model.BoardException;
+import mvc2.board.model.BoardRec;
+
+public class CommandView implements Command{
+	private String next;
+	
+	public CommandView(String next) {
+		this.next = next;
+	}
+	
+	@Override
+	public String execute(HttpServletRequest request, HttpServletResponse response) throws CommandException {
+		int id = Integer.parseInt(request.getParameter("id"));
+		try {
+			BoardRec rec = BoardDao.getInstance().selectById(id);
+		} catch (BoardException e) {
+			e.printStackTrace();
+		}
+		
+		return next;
+	}
+
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>리터럴 함수</title>
+</head>
+<body>
+	<script>
+	
+	// @ function 명령은 정적인 구조이고, 
+	// @ Function 생성자와 함수리터럴은 실행시 판단한다.
+
+	// function 명령어는 정적인 구조
+	// 함수리터럴 구조는 실행시 함수를 인지
+	
+	
+	/* document.writeln('삼각형의 면적은 2 ' +  triangle(4,3) + '</br>');
+	function triangle ( base, height ){
+				return base * height / 2;
+	} */
+	
+		// 함수리터럴 방식에서는 함수 선언이 먼저 있어야 한다
+		/* var triangle = function( base, height ){
+			alert( this.base );
+			return base * height / 2;
+		} 	
+		document.writeln('삼각형의 면적은 ' +  triangle(4,3) + '</br>');		
+		document.writeln('triangle 값:' + triangle +'<br/>')
+		triangle='문자열';
+		document.writeln('triangle 값:' + triangle +'<br/>') */
+	
+	// @ 함수는 데이터형의 일종이다.
+	/* function doA(){
+			document.write('함수 A <br/>');
+	}
+	function doB(){
+			document.write('함수 B <br/>');
+	}
+	
+	var arr = [doA, doB];
+	console.log(arr);
+	//함수 호출 arr();
+	arr[0](); */
+	
+	
+	//@함수가 다른 함수의 인자나 리턴값이 될 수 있다.
+	/* 
+		function(data){
+			return data;
+	}
+	*/
+	
+	// f4:함수명 / f1,f2,f3은 매개변수명
+	function f4(f1, f2, f3){//인자로 함수가 들어가고
+		return f3(f1()+f2());//리턴값으로 함수가 들어간다아아아아아아아아아아아ㅏ아아아아아
+	}
+	var f1 = function(){return 2;};
+	var f2 = function(){return 3;};
+	var f3 = function(a){return a*a;};
+	var result = f4( f1, f2, f3 );
+	document.write('result=' + result);
+	
+/* 	function f4(f1, f2, f3){//인자로 함수가 들어가고
+		return f3(f1()+f2());//리턴값으로 함수가 들어간다아아아아아아아아아아아ㅏ아아아아아
+	}
+	
+	var result = f4( function(){return 2;},
+					function(){return 3;},
+					function(a){return a*a;}
+	);
+	document.write('result=' + result); */
+	</script>
+</body>
+</html>

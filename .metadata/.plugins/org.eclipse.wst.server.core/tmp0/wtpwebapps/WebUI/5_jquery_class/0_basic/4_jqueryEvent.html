@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jquery event</title>
+
+<style type="text/css">
+	.bg { background : yellow; }
+	.border { border : 3px dotted red; }
+</style>
+<script type="text/javascript" src='../lib/jquery-3.5.1.min.js'></script>
+<script type="text/javascript">
+$(function(){ //애들이 dom에 올라올 때 까지 기다리겠다.
+	
+	$('li').css('cursor', 'pointer');
+	
+	
+	// 이게 오리지날 이벤트를 연결하는 함수
+	// bind()와 one()의 차이점: one은 이벤트가 딱 1번만 걸림, bind는 계속 걸림
+// 	$('li').bind('click', function(){
+// 		$('#result').html($(this).text());
+// 	});
+	// 위에 것의 축약형(bind 삭제)
+	
+	// 이벤트 정보를 확인하는 방법(매개변수 쓰기)
+// 	$('li').click(function(evt){
+// 		for(var i in evt){
+// 			console.log(i + ':' + evt[i]);
+// 		}
+// 	});
+	
+	// 동적으로 요소 만들기 -> 이벤트가 안걸림****on() / live()는 예전거임 이용
+	$('h1').click(function(){
+		var li = $('<li/>').text(new Date()); // 
+		$('ul').append(li);
+	});
+	
+	// 동적요소 만든 후 이벤트 적용시키기(on() 활용)*********
+	$('ul').on('click', 'li', function(){ // 부모를 찾고 부모의 자식 중 li를 걸러
+		$('#result').html($(this).text()); 
+		$('li').css('cursor', 'pointer');
+	});
+	
+	/* $('li').bind('click', function(){
+		$('#result').html($(this).text());
+	}); */
+	
+	
+	
+	
+	
+	
+
+});
+</script>
+
+</head>
+<body>
+	<h1>제이쿼리 이벤트</h1>
+	 <ul>
+		<li>부에노스 아이레스</li>
+		<li>바르셀로나</li>
+		<li>리마</li>
+		<li>라파스</li>
+	 </ul>	
+	<div id="result"></div>
+</body>
+</html>

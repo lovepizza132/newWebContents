@@ -1,0 +1,75 @@
+package mvc2.board.control;
+
+import java.io.IOException;
+import java.util.HashMap;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import mvc2.board.command.Command;
+import mvc2.board.command.CommandException;
+import mvc2.board.command.CommandList;
+import mvc2.board.command.CommandNull;
+
+/**
+ * Servlet implementation class BoardControl
+ */
+public class BoardControl extends HttpServlet{
+	
+	private HashMap commandMap;
+	
+	
+	public BoardControl() { // 생성자 함수
+		super();
+		initCommand();
+	}
+	
+	private void initCommand() {
+		commandMap = new HashMap();
+		
+		commandMap.put("main-page", new CommandNull("Main.jsp"));
+		commandMap.put("list-page", new CommandList("BoardList.jsp"));
+	}
+	
+	
+	
+	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		processRequest(request, response);
+	}
+
+	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		processRequest(request, response);
+	}
+	
+	
+	
+	public void processRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// 한글처리
+		request.setCharacterEncoding("UTF=8");
+		
+		String nextPage = "";
+		String cmdKey = request.getParameter("cmd");
+		if(cmdKey==null) {
+			cmdKey = "main-page";
+		}
+		
+		Command cmd = null;
+		
+		try {
+		if(commandMap.containsKey(cmdKey)) {
+			cmd = (Command)commandMap.get(cmdKey); //new CommandList("BoardList.jsp") 클래스 객체 생성
+			// 생성한 Command****클래스가 상속받은 인터페이스를 구현하는 곳
+		}else {
+			throw new CommandException("지정할 명령어가 존재하지 않음");
+		}
+			cmd.execute(request, response);
+		} catch (CommandException e) {
+			e.printStackTrace();
+		}
+		
+	}
+	
+	
+}

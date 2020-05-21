@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+var CheckWeight = function(name, height, weight){
+	this.name = name;
+	this.height = height;
+	this.weight = weight;
+}
+
+CheckWeight.prototype = {
+		getInfo: function(){
+			return this.name + this.height + this.weight;
+		},
+		getResult: function(){
+			var minWeight = (this.height-100)*0.9-5;
+			var maxWeight = (this.height-100)*0.9+5;
+			if(minWeight>this.weight){
+			return "미달";
+			}
+			if(minWeight<this.weight&&this.weight<maxWeight){
+			return "표준";
+			}
+			if(this.weight>maxWeight){
+			return "비만";
+			}
+		}
+};
+
+var kim = new CheckWeight ( '김길동', 160, 55 );
+var lee  = new CheckWeight ( '이길동', 180, 95 );
+
+document.write(  kim.getInfo() );
+document.write(  kim.getResult() );
+
+document.write(  lee.getInfo() );
+document.write(  lee.getResult() );
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+package mybatis.guest.service2;
+
+import java.text.DecimalFormat;
+import java.util.*;
+
+
+import mybatis.guest.model2.*;
+import mybatis.guest.session2.*;
+
+public class BoardService {
+	
+	private int totalRecCount;		// 전체 레코드 수	
+	private int pageTotalCount;		// 전체 페이지 수
+	private int countPerPage = 5;	// 한페이지당 레코드 수
+	
+	private static BoardService service;
+	 
+	public static BoardService getInstance(){
+		if( service == null) service = new BoardService();
+		return service;
+	}
+	private BoardService() {} //이걸 안하면 디폴트값으로 public CommentService(){}생성자 생성 그러면 new로 계속 만들어져서 꼭 해야함
+	
+	BoardRepository repo = new BoardRepository();
+	
+	// 목록보기
+	public List<BoardRec> getArticleList(String pNum){
+		int pageNum=1;
+		if(pNum != null) pageNum = Integer.parseInt(pNum);
+		/*
+		 *	pageNum		firstRow	endRow
+		 *		1			1			5
+		 *		2			6			10
+		 *		3			11			15
+		 *
+		 */
+		int firstRow = (pageNum-1)*countPerPage+1;
+		int endRow = pageNum*countPerPage;
+		
+		List<BoardRec> mList = repo.selectList(firstRow, endRow);			
+		return mList;
+	}
+	// total 페이지
+	public Integer getTotalCount() {
+		int totalRecCount =  repo.getTotalCount();
+		pageTotalCount = (int)Math.ceil((double)totalRecCount/countPerPage);
+		return pageTotalCount;
+	}
+	// 입력하기
+	
+	
+	// view보기
+	public BoardRec getArticleById(String id) throws BoardException{
+		int articleId = 0;
+		if(id != null) articleId = Integer.parseInt(id);
+		BoardRec board = repo.getArticleById(articleId);
+		try {
+			repo.increaseReadCount(articleId);// view화면 open시 마다 조회수 증가
+		} catch (mybatis.guest.session2.BoardException e) {
+			System.out.println("조회수 함수 오류");
+			e.printStackTrace();
+		} 
+		return board;
+	}
+	// 삭제하기
+	public int delete( String id, String password ) throws BoardException{
+		
+		// DB delete
+		int article_id = 0;
+		if( id!=null ) article_id = Integer.parseInt( id );
+		int result = repo.deleteBoard(article_id, password);
+		return result;
+	}
+	// 입력하기
+	public Integer write(BoardRec board) {
+		// 그룹번호(group_id) 지정
+		int groupId = repo.getGroupId();
+		board.setGroupId(groupId);
+		
+		// 순서번호(sequence_no) 지정
+		DecimalFormat dformat = new DecimalFormat("0000000000");
+		board.setSequenceNo( dformat.format(groupId) + "999999");
+		// groupId : 1 - sequencceNo: 0001999999
+		
+		// DB에 insert
+		int article_id = repo.insert(board);
+		
+		return article_id;
+	}
+	
+	// 수정하기
+	public Integer update(BoardRec board) {
+		int result = repo.update(board);
+		return result;
+	}
+	
+}

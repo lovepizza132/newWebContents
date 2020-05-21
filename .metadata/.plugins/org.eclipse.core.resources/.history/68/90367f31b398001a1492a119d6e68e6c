@@ -1,0 +1,37 @@
+
+테이블명 : comment_tab
+
+번호	comment_no		number(19) pk
+사용자	user_id		varchar2(20)
+내용	comment_content	varchar2(500)
+날짜 reg_date			date
+
+시퀀스 만들기
+seq_commet
+
+레코드 2~3개 만들고 커밋하기***
+
+
+[참고]DB연결
+	1. JDBC
+	2. Mybatis(ibatis) + Spring
+		
+		2-1 Config.xml(Connection파일, 설정을 담당)
+			이걸 써줘야 Mapper에서 검색할 때 * 사용 가능(이게 아니면 Mapper에서 select 컬럼에 별칭을 beans와 같게해줘야 함)
+			<settings>
+				<setting name="mapUnderscoreToCamelCase" value="true"/>
+			</settings>
+			
+		2-2 Mapper.xml(CRUD파일) 
+			1. 폴더 위치 기술할때 /로 기술
+			2. <mapper namespace="">는 mapper에 대한 별칭
+			3. <select id="">는 sql에 대한 별칭, parameter type은 ?에 대한 기본형, result type은 리턴값
+		
+		2-3 Repository.java(Config.xml와 연동)
+		
+	3. JPA + Spring Boot 수업안함
+	
+Mybatis 설정
+-chrome에 https://github.com/mybatis/mybatis-3/releases 검색 후 mybatis-3.5.4.zip 다운로드
+
+-zip 내 lib폴더에 있는 파일 JSP WebContent-lib에 다 붙여넣기~

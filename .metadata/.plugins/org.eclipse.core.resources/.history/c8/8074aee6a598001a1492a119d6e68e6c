@@ -1,0 +1,5 @@
+package Mybtis.guest.model;
+
+public class Comment {
+
+}

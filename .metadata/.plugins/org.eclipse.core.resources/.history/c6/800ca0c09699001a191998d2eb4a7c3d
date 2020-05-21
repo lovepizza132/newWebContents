@@ -1,0 +1,10 @@
+package mcv2.board.control;
+
+import javax.servlet.http.HttpServlet;
+
+public class BoardControl extends HttpServlet{
+	
+	public BoardControl() { // 생성자 함수
+		super();
+	}
+}

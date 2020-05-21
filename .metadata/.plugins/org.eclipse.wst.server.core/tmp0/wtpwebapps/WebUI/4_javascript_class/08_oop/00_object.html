@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+// 배열: [], 객체: {}
+
+/*// 1번 
+let obj = {name: '홍길숙', age:'44' }; // json구조(namevalue-keyvalue로 이루어진 구조를 뜻함)
+console.log(obj);
+
+// 기존객체에 추가가 가능하다.
+obj.display = function(){
+	return this.name + '님 ' + this.age + '세 <br/>';
+};
+document.write(obj.display());
+ */
+
+ 
+ 
+// 2번
+// var obj2 = {};
+ var obj2 = new Object(); // 위에있는 것과 같다.
+ obj2.name = '홍길동';
+ obj2['age'] = '33'; // 객체에 추가할 때 '.' 항상 점을 찍어 진행했지만 배열 형태에 문자열형으로 기입하는 [''] 방식의 입력도 가능하니 꼭 기억할 것
+ obj2.display = function(){ //obj2.display == obj2['display']
+		return this.name + '님 ' + this.age + '세 <br/>';
+ };
+ document.write(obj2.display());
+
+ 
+ 
+/* 
+	객체 리터럴(변수 안에 들어가는 값)
+	장점 - 별도의 클래스 같은 구조 없이 빠르게 객체 생성하고 구성도 자유롭다
+	단점 - 미리 정리된 구조가 없다는 것 = 구조를 파악할 수 없다. 즉, 구조가 없고 이는 재사용이 어려움.
+*/
+</script>
+</head>
+<body>
+
+</body>
+</html>

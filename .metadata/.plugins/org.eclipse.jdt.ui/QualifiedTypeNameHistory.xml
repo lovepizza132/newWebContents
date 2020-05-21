@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.lang.ClassNotFoundException"/>
+<fullyQualifiedTypeName name="java.sql.SQLException"/>
+<fullyQualifiedTypeName name="java.beans.Statement"/>
+<fullyQualifiedTypeName name="java.sql.Statement"/>
+<fullyQualifiedTypeName name="member.beans.JdbcUtil"/>
+<fullyQualifiedTypeName name="java.sql.ResultSet"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+<fullyQualifiedTypeName name="java.sql.DriverManager"/>
+<fullyQualifiedTypeName name="java.io.Serializable"/>
+<fullyQualifiedTypeName name="mybatis.guest.model.BoardRec"/>
+<fullyQualifiedTypeName name="mybatis.guest.model2.BoardRec"/>
+<fullyQualifiedTypeName name="mvc.guest.command.CommandDelete"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="mvc2.board.command.CommandList"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
+<fullyQualifiedTypeName name="mvc.guest.model.MessageDao"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="mvc2.board.command.CommandNull"/>
+<fullyQualifiedTypeName name="mvc2.board.command.Command"/>
+<fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
+<fullyQualifiedTypeName name="mvc2.board.command.CommandView"/>
+<fullyQualifiedTypeName name="mvc2.board.model.BoardRec"/>
+<fullyQualifiedTypeName name="mvc2.board.model.BoardDao"/>
+<fullyQualifiedTypeName name="mvc2.board.command.CommandWrite"/>
+<fullyQualifiedTypeName name="board.service.WriteArticleService"/>
+<fullyQualifiedTypeName name="board2.service.ViewArticleService"/>
+<fullyQualifiedTypeName name="mvc2.board.command.CommandDelete"/>
+<fullyQualifiedTypeName name="board2.service.DeleteArticleService"/>
+<fullyQualifiedTypeName name="mvc2.board.model.BoardException"/>
+<fullyQualifiedTypeName name="board2.service.ListArticleService"/>
+</qualifiedTypeNameHistroy>

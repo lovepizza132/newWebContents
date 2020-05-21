@@ -1,0 +1,5 @@
+package mcv2.board.control;
+
+public class BoardControl {
+
+}

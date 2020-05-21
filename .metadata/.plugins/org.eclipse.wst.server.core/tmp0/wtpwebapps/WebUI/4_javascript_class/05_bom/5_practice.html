@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+window.onload = function(){
+	var sel = document.frm.site;
+	for(var i=0; i<sel.length; i++){
+		sel[i].onclick = function(){
+			document.getElementsByName('ifrm')[0].src = this.value;
+			//document.getElementsByName('ifrm')[0].src = this.value;
+		}
+	}
+	
+}
+</script>
+</head>
+<body>
+	<form name="frm">
+		<input type='radio' name='site' value='http://www.daum.net'>다음
+		<input type='radio' name='site' value='http://www.facebook.com'>페이스북
+		<input type='radio' name='site' value='http://www.nate.com'>네이트<br>
+		<iframe name='ifrm' width='1000', height='500' src=''>사이트</iframe>
+	</form>
+</body>
+</html>

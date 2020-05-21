@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>◆◆  Travel Sketch  ◆◆</title>
+<link href='css/travel.css' rel='stylesheet' type='text/css'>
+<script src="scriptTravel.js"></script>
+
+</head>
+
+<body>
+<form name='frm' action="" method='post'>
+<table width="800" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><img src="img/travel_01.gif" width="800" height="102" /></td>
+  </tr>
+  <tr>
+    <td height="33" background="img/t
+    ravel_02.gif"></td>
+  </tr>
+</table>
+<table width="800" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="233" valign="top"><table width="233" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td><img src="img/travel_reservation_01.gif" width="233" height="624" /></td>
+      </tr>
+      
+    </table></td>
+    <td width="567" valign="top"><table width="567" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="26" height="35">&nbsp;</td>
+        <td height="35"><img src="img/travel_reservation_02.gif" width="515" height="35" /></td>
+        <td width="26" height="35">&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="26">&nbsp;</td>
+        <td valign="top"><table width="515" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td height="10" colspan="2"></td>
+            </tr>
+          <tr>
+            <td width="20">&nbsp;</td>
+            <td><img src="img/travel_reservation_03.gif" width="111" height="20" /></td>
+            </tr>
+          <tr>
+            <td width="20" height="100">&nbsp;</td>
+            <td height="100"><table width="540" border="0" cellpadding="3" cellspacing="1" bgcolor="#CCCCCC">
+              <tr>
+                <td width="110" height="25" bgcolor="#F7F7F7"> <div align="center"><span class="text1">성인(만12세이상)</span></div></td>
+                <td width="190" height="25" bgcolor="#FFFFFF">
+                  <label>
+                    <input name="adultText" type="text" id="adultText" size="2" title='숫자만 입력하세요' pattern='^[0-9]$' autocomplete='off'/>
+                    </label>
+                  <span class="text4">명 <span class="text2">[1인당 39.000원]</span></span></td>
+                <td width="80" height="25" rowspan="3" bgcolor="#F7F7F7"><div align="center"><span class="text1">상품합계금액</span></div></td>
+                <td width="100" height="25" rowspan="3" bgcolor="#FFFFFF"><span class="text4">=</span>
+                  <input name="totalText" type="text" id="totalText" value="0원" size="10" /></td>
+              </tr>
+              <tr>
+                <td width="110" height="25" bgcolor="#F7F7F7"><div align="center"><span class="text1">아동(만12세미만)</span></div></td>
+                <td width="190" height="25" bgcolor="#FFFFFF"><input name="childText" type="text" id="childText" size="2" title='숫자만 입력하세요' pattern='^[0-9]$' autocomplete='off'/>
+                 <span class="text4">명</span><span class="text4"> <span class="text2">[1인당 29.000원]</span></span> </td>
+                </tr>
+              <tr>
+                <td width="110" height="25" bgcolor="#F7F7F7"><div align="center"><span class="text1">유아(만 2세이상)</span></div></td>
+                <td width="190" height="25" bgcolor="#FFFFFF"><input name="infantText" type="text" id="infantText" size="2" title='숫자만 입력하세요' pattern='^[0-9]$' autocomplete='off'/>
+                 <span class="text4">명 <span class="text2">[1인당 19.000원]</span></span></td>
+                </tr>
+            </table></td>
+            </tr>
+          <tr>
+            <td width="20" height="40">&nbsp;</td>
+            <td height="40"><table width="540" border="0" cellpadding="0" cellspacing="1" bgcolor="#8FCBD8">
+              <tr>
+                <td height="30" bgcolor="#D0EDF3"><div align="center"><span class="text3">혼자 객실을 이용시 싱글 추가요금, 또는 추가사항에 따라서 추가요금이 발생합니다.</span></div></td>
+              </tr>
+            </table></td>
+            </tr>
+          <tr>
+          
+            <td width="20" height="50" valign="top">&nbsp;</td>
+            <td height="50" valign="top"><div align="center" class="text1">
+                  <label>
+                  <input type="checkbox" name="checkbox" id="checkbox" />
+                  </label>
+              여행약관에 동의합니다. 
+              <input type="checkbox" name="checkbox2" id="checkbox2" />
+              개인정보보호정책에동의합니다.</div></td>
+            </tr>
+          <tr>
+            <td width="20">&nbsp;</td>
+            <td><img src="img/travel_reservation_04.gif" width="111" height="20" /></td>
+            </tr>
+          <tr>
+            <td width="20">&nbsp;</td>
+            <td><table width="560" border="0" cellpadding="3" cellspacing="1" bgcolor="#CCCCCC">
+              <tr>
+                <td width="80" height=
+                "25" bgcolor="F7F7F7"><span class="text1">한글이름</span></td>
+                <td width="170" height="25" bgcolor="#FFFFFF"><input name="korName" type="text" id="korName" size="6" pattern='^[가-힣]{2,5}$' title='한글 2~5글자 이내' required='required' autocomplete='off'/>
+                  <input name="radio" type="radio" id="radioMale" value="radio" />
+                  <span class="text1">남자</span>  
+                  <input type="radio" name="radio" id="radioFemale" value="radio" />
+                   <span class="text1"> 여자  </span></td>
+                <td width="80" height="25" bgcolor="F7F7F7" class="text1">영문성/이름</td>
+                <td width="170" height="25" bgcolor="#FFFFFF"><input name="engName" type="text" id="engNameFirst" size="8" pattern='^[a-zA-Z]{1,15}$' title='영문으로 성(First name)을 작성해주세요' required='required' autocomplete='off'/>
+                  <span class="text1">/</span>
+                    <input name="textfield10" type="text" id="engNameLast" size="6" pattern='^[a-zA-Z]{1,15}$' title='영문으로 이름(last name)을 작성해주세요' required='required' autocomplete='off'/></td>
+              </tr>
+              <tr>
+                <td width="80" height="25" bgcolor="F7F7F7"><span class="text1">연령기준</span></td>
+                <td width="170" height="25" bgcolor="#FFFFFF">
+                  <label>
+                    <select name="select" class="text1" id="select">
+                      <option>연령기준선택</option>
+                      <option>10대</option>
+                      <option>20대</option>
+                      <option>30대</option>
+                      <option>40대</option>
+                      <option>50대 이상</option>
+                    </select>
+                    </label>                </td>
+                <td width="80" height="25" bgcolor="F7F7F7" class="text1">주민번호</td>
+                <td width="170" height="25" bgcolor="#FFFFFF"><input name="textfield11" type="text" id="textfield11" size="6" title='주민번호 앞자리 6자리를 입력하세요.' pattern='^(?:[0-9]{2}(?:0[1-9]|1[0-2])(?:0[1-9]|[1,2][0-9]|3[0,1]))$' required='required' autocomplete='off'/>
+                  <span class="text1">-</span>
+                    <input name="textfield12" type="text" id="textfield12" size="8" title='주민번호 뒷자리 7자리를 입력하세요.' pattern='^[0-9][0-9]{6}$' required='required' autocomplete='off'/></td>
+              </tr>
+              <tr>
+                <td width="80" height="25" bgcolor="F7F7F7"><span class="text1">전화번호</span></td>
+                <td width="170" height="25" bgcolor="#FFFFFF">
+                  <span class="text1">
+                  <input name="textfield6" type="text" id="textfield6" size="2" title='핸드폰번호 숫자 3자리를 입력하세요' pattern='^\d{3}$' required='required' autocomplete='off'/> - 
+                  <input name="textfield7" type="text" id="textfield7" size="3" title='핸드폰번호 숫자 3~4자리를 입력하세요' pattern='^\d{3,4}$' required='required' autocomplete='off'/> -
+                  <input name="textfield8" type="text" id="textfield8" size="3" title='핸드폰번호 숫자 4자리를 입력하세요' pattern='^\d{4}$' required='required' autocomplete='off'/>
+                  </span></td>
+                <td width="80" height="25" bgcolor="F7F7F7" class="text1">이메일주소</td>
+                <td width="170" height="25" bgcolor="#FFFFFF"><input name="textfield13" type="text" id="textfield13" size="18" title='이메일주소를 입력하세요' pattern='^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$' required='required' autocomplete='off'/></td>
+              </tr>
+              <tr>
+                <td width="80" height="25" bgcolor="F7F7F7"><span class="text1">여권관련정보</span></td>
+                <td height="25" colspan="3" bgcolor="#FFFFFF"><select name="select2" class="text1" id="select2">
+                  <option>:::여권유무:::</option>
+                                                </select> 
+                  <span class="text1">여권번호 
+                  <input name="textfield14" type="text" id="textfield14" size="12" />
+                  여권만료일 
+                  <input name="textfield15" type="text" id="textfield15" size="12" />
+                  </span></td>
+                </tr>
+              <tr>
+                <td width="80" height="25" bgcolor="F7F7F7"><span class="text1">비자관련정보</span></td>
+                <td height="25" colspan="3" bgcolor="#FFFFFF"><select name="select3" class="text1" id="select3">
+                  <option>:::비자유무:::</option>
+                                                </select> 
+                  <span class="text1">비자만료일</span> <span class="text1">
+                  <input name="textfield16" type="text" id="textfield16" size="12" />
+                  </span></td>
+                </tr>
+              <tr>
+                <td width="80" height="25" bgcolor="F7F7F7"><span class="text1">리턴연장여부</span></td>
+                <td height="25" colspan="3" bgcolor="#FFFFFF"><input name="radio" type="radio" id="radio3" value="radio" checked="checked" />
+                  <span class="text1">                  예 
+                  <input name="radio" type="radio" id="radio4" value="radio" />
+                  아니오 현지출발예정일
+                  <input name="textfield17" type="text" id="textfield17" size="10" />
+                  </span> <span class="text1">관광진흥기금
+                  <select name="select4" class="text1" id="select4">
+                    <option>▷포함</option>
+                                    </select>
+                  </span></td>
+                </tr>
+              <tr>
+                <td width="80" height="25" bgcolor="F7F7F7"><span class="text1">우편번호</span></td>
+                <td height="25" colspan="3" bgcolor="#FFFFFF"><span class="text1">
+                <input name="postNum" type="text" id="postNum" size="10"/ title='우편번호를 입력해 주세요.' required='required'>
+                <input type="button" onclick="sample6_execDaumPostcode()" value="우편번호 찾기">
+                 </tr>
+              <tr>
+                <td width="80" height="25" bgcolor="F7F7F7"><span class="text1">주소</span></td>
+                <td height="25" colspan="3" bgcolor="#FFFFFF"><span class="text1" >
+                  <input name="addr" type="text" id="addr" size="50" /> 
+                </span></td>
+                </tr>
+              <tr>
+                <td width="80" height="25" bgcolor="F7F7F7"><span class="text1">상세주소</span></td>
+                <td height="25" colspan="3" bgcolor="#FFFFFF"><span class="text1">
+                <input name="detailAddr" type="text" id="detailAddr" size="30"/ title='상세주소를 입력해주세요.' required='required'>
+        나머지 주소 입력
+              </tr>
+              <tr>
+                <td width="80" height="25" bgcolor="F7F7F7"><span class="text1">고객요청사항</span></td>
+                <td height="25" colspan="3" bgcolor="#FFFFFF"><span class="text1">
+                  <input name="textfield19" type="text" id="textfield19" size="55" title/>
+                </span></td>
+                </tr>
+            </table></td>
+            </tr>
+          <tr>
+            <td width="20">&nbsp;</td>
+            <td><table width="230" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+                <td colspan="6">&nbsp;</td>
+                </tr>
+              <tr>
+                <td><input id='buyNow' type='image' src="img/travel_button_01.gif" width="84" height="27" /></td>
+                <td width="2">&nbsp;</td>
+                <td><input id='book' type='image' src="img/travel_button_02.gif" width="71" height="27" /></td>
+                <td width="2">&nbsp;</td>
+                <td><input id='retry' type='image' src="img/travel_button_03.gif" width="71" height="27" /></td>
+              </tr>
+              <tr>
+                <td colspan="6">&nbsp;</td>
+                </tr>
+            </table></td>
+            </tr>
+
+        </table></td>
+        <td width="26">&nbsp;</td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="37" colspan="2" bgcolor="#000000"></td>
+  </tr>
+  </form>
+</table>
+
+
+<script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+<script>
+    function sample6_execDaumPostcode() {
+        new daum.Postcode({
+            oncomplete: function(data) {
+                // 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
+				
+                // 각 주소의 노출 규칙에 따라 주소를 조합한다.
+                // 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
+                var addr = ''; // 주소 변수
+                var extraAddr = ''; // 참고항목 변수
+
+                //사용자가 선택한 주소 타입에 따라 해당 주소 값을 가져온다.
+                if (data.userSelectedType === 'R') { // 사용자가 도로명 주소를 선택했을 경우
+                    addr = data.roadAddress;
+                } else { // 사용자가 지번 주소를 선택했을 경우(J)
+                    addr = data.jibunAddress;
+                }
+
+                // 사용자가 선택한 주소가 도로명 타입일때 참고항목을 조합한다.
+                if(data.userSelectedType === 'R'){
+                    // 법정동명이 있을 경우 추가한다. (법정리는 제외)
+                    // 법정동의 경우 마지막 문자가 "동/로/가"로 끝난다.
+                    if(data.bname !== '' && /[동|로|가]$/g.test(data.bname)){
+                        extraAddr += data.bname;
+                    }
+                    // 건물명이 있고, 공동주택일 경우 추가한다.
+                    if(data.buildingName !== '' && data.apartment === 'Y'){
+                        extraAddr += (extraAddr !== '' ? ', ' + data.buildingName : data.buildingName);
+                    }
+                    /* // 표시할 참고항목이 있을 경우, 괄호까지 추가한 최종 문자열을 만든다.
+                    if(extraAddr !== ''){
+                        extraAddr = ' (' + extraAddr + ')';
+                    } */
+                    // 조합된 참고항목을 해당 필드에 넣는다.
+                    document.getElementById("addr").value = extraAddr;
+                
+                } else {
+                    document.getElementById("addr").value = '';
+                }
+
+                // 우편번호와 주소 정보를 해당 필드에 넣는다.
+                document.getElementById('postNum').value = data.zonecode;
+                document.getElementById("addr").value = addr;
+                // 커서를 상세주소 필드로 이동한다.
+                document.getElementById("detailAddr").focus();
+            }
+        }).open();
+    }
+</script>
+</body>
+</html>

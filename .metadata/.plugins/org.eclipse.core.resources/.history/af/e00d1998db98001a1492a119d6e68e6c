@@ -1,0 +1,86 @@
+package mybatis.guest.session;
+
+import java.io.*;
+import java.util.*;
+
+import mybatis.guest.model.Comment;
+
+import org.apache.ibatis.io.Resources;
+import org.apache.ibatis.session.*;
+
+//모델 개념
+public class CommentRepository 
+{
+	//	private final String namespace = "CommentMapper";
+
+	private SqlSessionFactory getSqlSessionFactory() {
+		
+		InputStream inputStream;
+		try {
+			inputStream = Resources.getResourceAsStream("mybatis-config.xml");
+		} catch (IOException e) {
+			throw new IllegalArgumentException(e);
+		}
+		SqlSessionFactory sessFactory =  new SqlSessionFactoryBuilder().build(inputStream);
+		return sessFactory;
+	}
+//		연결객체 - JDBC : connection
+//	    	  	- Mybatis : SqlSesstion
+	public List<Comment> selectComment() {
+		SqlSession sqlSess = getSqlSessionFactory().openSession();
+		try {
+			List<Comment> list = sqlSess.selectList("CommentMapper.selectComment");
+			return list;
+		}finally {
+			sqlSess.close(); // 연결을 끊는 것이 아니라 반납하는 개념
+		}
+	}
+	
+	public Integer insertComment(Comment c) {
+		SqlSession sqlSess = getSqlSessionFactory().openSession();
+		try {
+			int result = sqlSess.insert("CommentMapper.insertComment", c);
+			if( result>0) sqlSess.commit();
+			else sqlSess.rollback();
+			return result;
+		}finally {
+			sqlSess.close(); //반납
+		}
+	}
+	
+	public Comment selectCommentByPk(long commentNo) {
+		SqlSession sqlSess = getSqlSessionFactory().openSession();
+		try {
+			HashMap map = new HashMap();
+			map.put("commentNo", commentNo);
+			Comment comment = sqlSess.selectOne("CommentMapper.selectCommentByPK", map);
+			return comment;
+		}finally{
+			sqlSess.close();
+		}
+	}
+	
+	public Integer deleteComment(long commentNo) {
+		int result = 0;
+		SqlSession sqlSess = getSqlSessionFactory().openSession();
+		try {
+			result = sqlSess.delete("CommentMapper.deleteComment", commentNo);
+			if( result>0) sqlSess.commit();
+			else sqlSess.rollback();
+			return result;
+		}finally {
+			sqlSess.close();
+		}
+	}
+	
+	public Integer update(Comment comment) {
+		int result = 0;
+		SqlSession sqlSess = getSqlSessionFactory().openSession();
+		try {
+			
+			return result;
+		}finally {
+			sqlSess.close();
+		}
+	}
+}

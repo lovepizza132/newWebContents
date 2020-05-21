@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+.wrap {
+    float: left;
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 30px;
+    text-align: center;
+    background: #ccc;
+}
+</style>
+<script type="text/javascript" src='../lib/jquery-3.5.1.min.js'></script>
+<script type="text/javascript">
+// 2. mouseenter /mouseleave 과 mouseover / mouseout 차이
+// MouseOver / MouseOut : 지정된 태그 요소(혹은 자신)는 물론이며, 자식 요소가 있다면  해당 자식요소의 영역까지 포함됨
+// MouseEnter / MouseLeave : 지정된 태그 요소(혹은 자신)의 영역만 해당되며, 자식 요소가 있다면 제외
+$(document).ready(function () {
+    $("#wrap").mouseover(function () {
+        $("#wrap p").css("background", "#a1ffa4");
+    });
+    $("#wrap").mouseout(function () {
+        $("#wrap p").css("border", "3px solid red");
+    });
+
+    $("#wrap2").mouseenter(function () {
+        $("#wrap2 p").css("background", "#a1ffa4");
+    });
+    $("#wrap2").mouseleave(function () {
+        $("#wrap2 p").css("border", "3px solid red");
+    });
+});
+
+
+
+
+
+
+
+// 4. find()와 filter() 차이
+</script>
+</head>
+<body>
+	<div id='wrap' class='wrap'>1
+		<p>MouseOver / MouseOut</p>
+	</div>
+
+	<div id='wrap2' class='wrap'>2
+		<p>MouseEnter / MouseLeave</p>
+	</div>
+
+</body>
+</html>
